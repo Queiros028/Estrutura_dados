@@ -1,0 +1,2 @@
+2;carro;22.00;200.00;sim;braga
+1;sfsf;100.00;200.00;sim;braga

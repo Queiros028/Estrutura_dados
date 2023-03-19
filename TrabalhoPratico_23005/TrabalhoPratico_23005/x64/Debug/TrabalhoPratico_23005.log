@@ -1,0 +1,13 @@
+﻿  main.c
+C:\Users\wados\OneDrive\Ambiente de Trabalho\stuff\eduardo\licenciatura\2 semestre\Estrutura_dados\TrabalhoPratico_23005\TrabalhoPratico_23005\main.c(233,66): warning C4047: 'function': 'char' differs in levels of indirection from 'char [50]'
+C:\Users\wados\OneDrive\Ambiente de Trabalho\stuff\eduardo\licenciatura\2 semestre\Estrutura_dados\TrabalhoPratico_23005\TrabalhoPratico_23005\main.c(233,62): warning C4024: 'alterarGestor': different types for formal and actual parameter 4
+C:\Users\wados\OneDrive\Ambiente de Trabalho\stuff\eduardo\licenciatura\2 semestre\Estrutura_dados\TrabalhoPratico_23005\TrabalhoPratico_23005\main.c(265,6): warning C4101: 'codTransporte': unreferenced local variable
+C:\Users\wados\OneDrive\Ambiente de Trabalho\stuff\eduardo\licenciatura\2 semestre\Estrutura_dados\TrabalhoPratico_23005\TrabalhoPratico_23005\main.c(275,6): warning C4101: 'codGestor': unreferenced local variable
+C:\Users\wados\OneDrive\Ambiente de Trabalho\stuff\eduardo\licenciatura\2 semestre\Estrutura_dados\TrabalhoPratico_23005\TrabalhoPratico_23005\main.c(266,13): warning C4101: 'aut': unreferenced local variable
+C:\Users\wados\OneDrive\Ambiente de Trabalho\stuff\eduardo\licenciatura\2 semestre\Estrutura_dados\TrabalhoPratico_23005\TrabalhoPratico_23005\main.c(276,7): warning C4101: 'nomeGestor': unreferenced local variable
+C:\Users\wados\OneDrive\Ambiente de Trabalho\stuff\eduardo\licenciatura\2 semestre\Estrutura_dados\TrabalhoPratico_23005\TrabalhoPratico_23005\main.c(267,17): warning C4101: 'alug': unreferenced local variable
+C:\Users\wados\OneDrive\Ambiente de Trabalho\stuff\eduardo\licenciatura\2 semestre\Estrutura_dados\TrabalhoPratico_23005\TrabalhoPratico_23005\main.c(267,7): warning C4101: 'tipo': unreferenced local variable
+C:\Users\wados\OneDrive\Ambiente de Trabalho\stuff\eduardo\licenciatura\2 semestre\Estrutura_dados\TrabalhoPratico_23005\TrabalhoPratico_23005\main.c(276,23): warning C4101: 'pass': unreferenced local variable
+C:\Users\wados\OneDrive\Ambiente de Trabalho\stuff\eduardo\licenciatura\2 semestre\Estrutura_dados\TrabalhoPratico_23005\TrabalhoPratico_23005\main.c(266,8): warning C4101: 'bat': unreferenced local variable
+C:\Users\wados\OneDrive\Ambiente de Trabalho\stuff\eduardo\licenciatura\2 semestre\Estrutura_dados\TrabalhoPratico_23005\TrabalhoPratico_23005\main.c(250): warning C4716: 'Gestor': must return a value
+  TrabalhoPratico_23005.vcxproj -> C:\Users\wados\OneDrive\Ambiente de Trabalho\stuff\eduardo\licenciatura\2 semestre\Estrutura_dados\TrabalhoPratico_23005\x64\Debug\TrabalhoPratico_23005.exe
