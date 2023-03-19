@@ -1,2 +1,0 @@
-10;asda;21.00;23.00;sim;braga
-1;carr;2.00;12.00;nao;braga

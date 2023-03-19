@@ -1,0 +1,112 @@
+\hypertarget{_header_8h_source}{}\doxysection{Header.\+h}
+\label{_header_8h_source}\index{C:/Users/wados/OneDrive/Ambiente de Trabalho/stuff/eduardo/licenciatura/2 semestre/Estrutura\_dados/Estrutura\_dados/TrabalhoPratico\_23005/TrabalhoPratico\_23005/Header.h@{C:/Users/wados/OneDrive/Ambiente de Trabalho/stuff/eduardo/licenciatura/2 semestre/Estrutura\_dados/Estrutura\_dados/TrabalhoPratico\_23005/TrabalhoPratico\_23005/Header.h}}
+\mbox{\hyperlink{_header_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*****************************************************************/}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include<stdio.h>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <string.h>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#pragma\ warning(disable:\ 4996)}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structregisto}{registo}}\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{int}\ codigo;\ \textcolor{comment}{//codigo\ do\ meio\ de\ transporte}}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{char}\ tipo[50];\textcolor{comment}{//tipo\ de\ meio\ de\ transporte(ex:\ trotinete\ elétrica)}}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{float}\ bateria;}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{float}\ autonomia;}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{char}\ aluguer[50];\ \textcolor{comment}{//registo\ de\ aluguer}}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{char}\ localizacao[50];\ \textcolor{comment}{//localização\ do\ meio\ de\ transporte}}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structregisto}{registo}}*\ seguinte;\ \textcolor{comment}{//endereço de\ memória\ para\ uma\ struct\ registo}}
+\DoxyCodeLine{00022\ \}\mbox{\hyperlink{structregisto}{meioTransporte}};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structregisto2}{registo2}}\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{int}\ codigo;\ \textcolor{comment}{//codigo\ do\ cliente}}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{char}\ nome[50];\ \textcolor{comment}{//nome\ do\ cliente}}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{int}\ numTelemovel;\ \textcolor{comment}{//numero\ de\ telefone}}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{int}\ nif;\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{char}\ mail[50];}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structregisto2}{registo2}}*\ seguinte;\ \textcolor{comment}{//endereço de\ memória\ para\ uma\ struct\ registo}}
+\DoxyCodeLine{00031\ \}\mbox{\hyperlink{structregisto2}{cliente}};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structregisto3}{registo3}}\ \{}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{int}\ codigo;\ \textcolor{comment}{//codigo\ do\ gestor}}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{char}\ nome[50];\ \textcolor{comment}{//nome\ do\ gestor}}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{char}\ password[50];\ \textcolor{comment}{//password\ do\ gestor}}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structregisto3}{registo3}}*\ seguinte;\ \textcolor{comment}{//endereço de\ memória\ para\ uma\ struct\ registo}}
+\DoxyCodeLine{00039\ \}\mbox{\hyperlink{structregisto3}{gestor}};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{comment}{//FUNÇÕES\ PARA\ GUARDAR\ NO\ FICHEIRO\ DE\ TEXTO}}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{comment}{//guardar\ os\ meios\ de\ transporte}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_header_8h_a541c9827e85220f3abef51cdbd78a89c}{guardarMeio}}(\mbox{\hyperlink{structregisto}{meioTransporte}}*\ inicio);}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{comment}{//guardar\ os\ clientes\ }}
+\DoxyCodeLine{00048\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_header_8h_a7c7d34f93362d50aa69241ca284536c5}{guardarCliente}}(\mbox{\hyperlink{structregisto2}{cliente}}*\ inicio);}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{comment}{//guardar\ os\ gestores}}
+\DoxyCodeLine{00050\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_header_8h_a9b804d6b71313b3b3f5b1ff4431eb567}{guardarGestor}}(\mbox{\hyperlink{structregisto3}{gestor}}*\ inicio);}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{comment}{//FUNÇÕES\ PARA\ LER\ OS\ DADOS}}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{comment}{//ler\ meios}}
+\DoxyCodeLine{00054\ \mbox{\hyperlink{structregisto}{meioTransporte}}*\ \mbox{\hyperlink{_header_8h_a0a18b1a7274ce15adec41aefd3bc1db9}{lerMeio}}();}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{comment}{//ler\ clientes}}
+\DoxyCodeLine{00056\ \mbox{\hyperlink{structregisto2}{cliente}}*\ \mbox{\hyperlink{_header_8h_a732f05f0073e1a0abc9f112b0706459c}{lerCliente}}();}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{comment}{//ler\ gestores}}
+\DoxyCodeLine{00058\ \mbox{\hyperlink{structregisto3}{gestor}}*\ \mbox{\hyperlink{_header_8h_accbd7143eb9425074087046ce8dae33f}{lerGestor}}();}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{comment}{//FUNÇÕES\ PARA\ VERIFICAR\ SE\ DETERMINADO\ DADO\ JÁ EXISTE}}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{comment}{//função\ para\ verificar\ se\ já existe\ o\ tipo\ de\ transporte}}
+\DoxyCodeLine{00062\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_header_8h_a869f73a8f3efa4e812e32029768f3040}{existeMeio}}(\mbox{\hyperlink{structregisto}{meioTransporte}}*\ inicio,\ \textcolor{keywordtype}{int}\ cod);}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{comment}{//função\ para\ verificar\ se\ já existe\ cliente}}
+\DoxyCodeLine{00064\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_header_8h_a589f9f275a22f780b0b3ea79989f1c05}{existeCliente}}(\mbox{\hyperlink{structregisto2}{cliente}}*\ inicio,\ \textcolor{keywordtype}{int}\ cod);}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{comment}{//função\ para\ verificar\ se\ já existe\ o\ gestor}}
+\DoxyCodeLine{00066\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_header_8h_aff36c0cb1d23c587dabbbc1ec1b76079}{existeGestor}}(\mbox{\hyperlink{structregisto3}{gestor}}*\ inicio,\ \textcolor{keywordtype}{int}\ cod);}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \textcolor{comment}{//FUNÇÕES\ PARA\ LISTAR\ OS\ DADOS\ }}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{comment}{//função\ para\ listar\ os\ dados\ do\ meio\ de\ transporte}}
+\DoxyCodeLine{00070\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_header_8h_a206d9271aaefa8683fac486be996a09c}{listarMeios}}(\mbox{\hyperlink{structregisto}{meioTransporte}}*\ inicio);}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{comment}{//função\ para\ listar\ os\ dados\ do\ cliente}}
+\DoxyCodeLine{00072\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_header_8h_a0ba3b00fabb87d3887cdd63748c85bc1}{listarCliente}}(\mbox{\hyperlink{structregisto2}{cliente}}*\ inicio);}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{comment}{//função\ para\ listar\ os\ dados\ do\ gestor}}
+\DoxyCodeLine{00074\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_header_8h_ae3d9ec71d24931ee021c28f4a70b7e70}{listarGestor}}(\mbox{\hyperlink{structregisto3}{gestor}}*\ inicio);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \textcolor{comment}{//funções\ para\ inserir\ um\ novo\ registo}}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{comment}{//função\ para\ inserir\ meio\ de\ transporte}}
+\DoxyCodeLine{00079\ \mbox{\hyperlink{structregisto}{meioTransporte}}*\ \mbox{\hyperlink{_header_8h_a7ba9d1cf6c82e41e66907cf8a710be52}{inserirMeio}}(\mbox{\hyperlink{structregisto}{meioTransporte}}*\ inicio,\ \textcolor{keywordtype}{int}\ cod,\ \textcolor{keywordtype}{char}\ tipo[],\ \textcolor{keywordtype}{float}\ bat,\ \textcolor{keywordtype}{float}\ aut,\ \textcolor{keywordtype}{char}\ alug[],\ \textcolor{keywordtype}{char}\ local[]);}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{comment}{//função\ para\ inserir\ cliente}}
+\DoxyCodeLine{00081\ \mbox{\hyperlink{structregisto2}{cliente}}*\ \mbox{\hyperlink{_header_8h_a1572d5972a38a40a36c439cbd8666ce9}{inserirCliente}}(\mbox{\hyperlink{structregisto2}{cliente}}*\ inicio,\ \textcolor{keywordtype}{int}\ cod,\ \textcolor{keywordtype}{char}\ name[],\ \textcolor{keywordtype}{int}\ numTel,\ \textcolor{keywordtype}{int}\ NIF,\ \textcolor{keywordtype}{char}\ email[]);}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{comment}{//função\ para\ inserir\ gestor}}
+\DoxyCodeLine{00083\ \mbox{\hyperlink{structregisto3}{gestor}}*\ \mbox{\hyperlink{_header_8h_af22866fc55e7326bc8071bb8921bfeff}{inserirGestor}}(\mbox{\hyperlink{structregisto3}{gestor}}*\ inicio,\ \textcolor{keywordtype}{int}\ cod,\ \textcolor{keywordtype}{char}\ name[],\ \textcolor{keywordtype}{char}\ pass[]);}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \textcolor{comment}{//funções\ para\ remover\ determinado\ tipo\ de\ dados}}
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{comment}{//função\ para\ remover\ meio\ de\ transporte}}
+\DoxyCodeLine{00088\ \mbox{\hyperlink{structregisto}{meioTransporte}}*\ \mbox{\hyperlink{_header_8h_a8cc9164a51b817459282247f432dc653}{removerMeio}}(\mbox{\hyperlink{structregisto}{meioTransporte}}*\ inicio,\ \textcolor{keywordtype}{int}\ cod);}
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{comment}{//função\ para\ remover\ cliente}}
+\DoxyCodeLine{00090\ \mbox{\hyperlink{structregisto2}{cliente}}*\ \mbox{\hyperlink{_header_8h_afb8fc8dfa5cf20cdbbcf9422f92f309e}{removerCliente}}(\mbox{\hyperlink{structregisto2}{cliente}}*\ inicio,\ \textcolor{keywordtype}{int}\ cod);}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{comment}{//função\ para\ remover\ gestor}}
+\DoxyCodeLine{00092\ \mbox{\hyperlink{structregisto3}{gestor}}*\ \mbox{\hyperlink{_header_8h_a6f149745a73d704e1164cc8c7bdbc381}{removerGestor}}(\mbox{\hyperlink{structregisto3}{gestor}}*\ inicio,\ \textcolor{keywordtype}{int}\ cod);}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \textcolor{comment}{//funções\ para\ alterar\ detemerminado\ tipo\ de\ dados}}
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{comment}{//função\ para\ alterar\ meio\ transporte}}
+\DoxyCodeLine{00096\ \mbox{\hyperlink{structregisto}{meioTransporte}}*\ \mbox{\hyperlink{_header_8h_a8d561abba2170c606513084228f9a737}{alterarMeio}}(\mbox{\hyperlink{structregisto}{meioTransporte}}*\ inicio,\ \textcolor{keywordtype}{int}\ cod,\ \textcolor{keywordtype}{char}\ tipo[],\ \textcolor{keywordtype}{float}\ bat,\ \textcolor{keywordtype}{float}\ aut,\ \textcolor{keywordtype}{char}\ alug[],\ \textcolor{keywordtype}{char}\ local[]);}
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{comment}{//função\ para\ alterar\ cliente}}
+\DoxyCodeLine{00098\ \mbox{\hyperlink{structregisto2}{cliente}}*\ \mbox{\hyperlink{_header_8h_aa9dc4e8cde0b896bd74b1ae77e134022}{alterarCliente}}(\mbox{\hyperlink{structregisto2}{cliente}}*\ inicio,\ \textcolor{keywordtype}{int}\ cod,\ \textcolor{keywordtype}{char}\ name[],\ \textcolor{keywordtype}{int}\ numTel,\ \textcolor{keywordtype}{int}\ NIF,\ \textcolor{keywordtype}{char}\ email[]);}
+\DoxyCodeLine{00099\ \textcolor{comment}{//função\ para\ alterar\ gestor}}
+\DoxyCodeLine{00100\ \mbox{\hyperlink{structregisto3}{gestor}}*\ \mbox{\hyperlink{_header_8h_abfe7970be40162ae728c8bef4bf99f9d}{alterarGestor}}(\mbox{\hyperlink{structregisto3}{gestor}}*\ inicio,\ \textcolor{keywordtype}{int}\ cod,\ \textcolor{keywordtype}{char}\ name[],\ \textcolor{keywordtype}{char}\ pass);}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \textcolor{comment}{//função\ para\ registo\ de\ aluguer\ de\ um\ determinado\ meio\ de\ mobilidade\ eletrica}}
+\DoxyCodeLine{00104\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_header_8h_a199de21dc320e7b96696d5a72e6deea6}{registoAluguer}}(\mbox{\hyperlink{structregisto}{meioTransporte}}*\ inicio,\ \textcolor{keywordtype}{int}\ cod);\ }
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \textcolor{comment}{//ordenar\ meios\ de\ transporte\ por\ ordem\ decrescente\ de\ autonomia}}
+\DoxyCodeLine{00107\ \mbox{\hyperlink{structregisto}{meioTransporte}}*\ \mbox{\hyperlink{_header_8h_aeea6ebe16f2c79da5cf14cfdd4f01574}{Ordenar}}(\mbox{\hyperlink{structregisto}{meioTransporte}}*\ inicio);}
+\DoxyCodeLine{00108\ \textcolor{comment}{//listagem\ dos\ meios\ de\ mobilidade\ elétrica\ por\ ordem\ decrescente\ de\ autonomia}}
+\DoxyCodeLine{00109\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_header_8h_ac0b33eb471c035c6de6bbc5780853d03}{listarMeiosAutonomia}}(\mbox{\hyperlink{structregisto}{meioTransporte}}*\ listagem);}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00111\ \textcolor{comment}{//listagem\ de\ meios\ de\ mobilidade\ existentes\ numa\ localização\ com\ determinado\ geocódigo}}
+\DoxyCodeLine{00112\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_header_8h_a1655473ddf202e752ea3bc31e5fbb7ac}{listarMeiosLocalizacao}}(\mbox{\hyperlink{structregisto}{meioTransporte}}*\ inicio,\ \textcolor{keywordtype}{char}\ local[]);\ }
+
+\end{DoxyCode}

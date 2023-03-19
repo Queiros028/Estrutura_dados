@@ -1,0 +1,2459 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext50 Code Example 9;}
+{\s50\li3600\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext51 Code Example 10;}
+{\s51\li3960\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext52 Code Example 11;}
+{\s52\li4320\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 12;}
+{\s53\li4680\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 13;}
+{\s60\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext61 List Continue 0;}
+{\s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext62 List Continue 1;}
+{\s62\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext63 List Continue 2;}
+{\s63\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext64 List Continue 3;}
+{\s64\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext65 List Continue 4;}
+{\s65\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext66 List Continue 5;}
+{\s66\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext67 List Continue 6;}
+{\s67\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext68 List Continue 7;}
+{\s68\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext69 List Continue 8;}
+{\s69\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext70 List Continue 9;}
+{\s70\li3600\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext71 List Continue 10;}
+{\s71\li3960\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext72 List Continue 11;}
+{\s72\li4320\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 12;}
+{\s73\li4680\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 13;}
+{\s80\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext81 DescContinue 0;}
+{\s81\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext82 DescContinue 1;}
+{\s82\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext83 DescContinue 2;}
+{\s83\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext84 DescContinue 3;}
+{\s84\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext85 DescContinue 4;}
+{\s85\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext86 DescContinue 5;}
+{\s86\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext87 DescContinue 6;}
+{\s87\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext88 DescContinue 7;}
+{\s88\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext89 DescContinue 8;}
+{\s89\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext90 DescContinue 9;}
+{\s90\li3600\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext91 DescContinue 10;}
+{\s91\li3960\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext92 DescContinue 11;}
+{\s92\li4320\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 12;}
+{\s93\li4680\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 13;}
+{\s100\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext101 LatexTOC 0;}
+{\s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext102 LatexTOC 1;}
+{\s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext103 LatexTOC 2;}
+{\s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext104 LatexTOC 3;}
+{\s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext105 LatexTOC 4;}
+{\s105\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext106 LatexTOC 5;}
+{\s106\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext107 LatexTOC 6;}
+{\s107\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext108 LatexTOC 7;}
+{\s108\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext109 LatexTOC 8;}
+{\s109\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext110 LatexTOC 9;}
+{\s110\li3600\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext111 LatexTOC 10;}
+{\s111\li3960\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext112 LatexTOC 11;}
+{\s112\li4320\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 12;}
+{\s113\li4680\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 13;}
+{\s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext121 \sautoupd List Bullet 0;}
+{\s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext122 \sautoupd List Bullet 1;}
+{\s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext123 \sautoupd List Bullet 2;}
+{\s123\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext124 \sautoupd List Bullet 3;}
+{\s124\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext125 \sautoupd List Bullet 4;}
+{\s125\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext126 \sautoupd List Bullet 5;}
+{\s126\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext127 \sautoupd List Bullet 6;}
+{\s127\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext128 \sautoupd List Bullet 7;}
+{\s128\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext129 \sautoupd List Bullet 8;}
+{\s129\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext130 \sautoupd List Bullet 9;}
+{\s130\fi-360\li3960\widctlpar\jclisttab\tx3960{\*\pn \pnlvlbody\ilvl0\ls11\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext131 \sautoupd List Bullet 10;}
+{\s131\fi-360\li4320\widctlpar\jclisttab\tx4320{\*\pn \pnlvlbody\ilvl0\ls12\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext132 \sautoupd List Bullet 11;}
+{\s132\fi-360\li4680\widctlpar\jclisttab\tx4680{\*\pn \pnlvlbody\ilvl0\ls13\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 12;}
+{\s133\fi-360\li5040\widctlpar\jclisttab\tx5040{\*\pn \pnlvlbody\ilvl0\ls14\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 13;}
+{\s140\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext141 \sautoupd List Enum 0;}
+{\s141\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext142 \sautoupd List Enum 1;}
+{\s142\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext143 \sautoupd List Enum 2;}
+{\s143\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext144 \sautoupd List Enum 3;}
+{\s144\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext145 \sautoupd List Enum 4;}
+{\s145\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext146 \sautoupd List Enum 5;}
+{\s146\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext147 \sautoupd List Enum 6;}
+{\s147\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext148 \sautoupd List Enum 7;}
+{\s148\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext149 \sautoupd List Enum 8;}
+{\s149\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext150 \sautoupd List Enum 9;}
+{\s150\fi-360\li3960\widctlpar\fs20\cgrid \sbasedon0 \snext151 \sautoupd List Enum 10;}
+{\s151\fi-360\li4320\widctlpar\fs20\cgrid \sbasedon0 \snext152 \sautoupd List Enum 11;}
+{\s152\fi-360\li4680\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 12;}
+{\s153\fi-360\li5040\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 13;}
+}
+{\info 
+{\title {\comment documentacao_23005 }documentacao_23005}
+{\comment Generated by doxygen 1.9.6.}
+{\creatim \yr2023\mo3\dy19\hr20\min34\sec44}
+}\pard\plain 
+\sectd\pgnlcrm
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\vertalc\qc\par\par\par\par\par\par\par
+\pard\plain \s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid 
+{\field\fldedit {\*\fldinst TITLE \\*MERGEFORMAT}{\fldrslt documentacao_23005}}\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\par
+\par\par\par\par\par\par\par\par\par\par\par\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+{\field\fldedit {\*\fldinst AUTHOR \\*MERGEFORMAT}{\fldrslt AUTHOR}}\par
+Version \par{\field\fldedit {\*\fldinst CREATEDATE \\*MERGEFORMAT}{\fldrslt Sun Mar 19 2023 }}\par
+\page\page\vertalt
+\pard\plain 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Table of Contents\par
+\pard\plain \par
+{\field\fldedit {\*\fldinst TOC \\f \\*MERGEFORMAT}{\fldrslt Table of contents}}\par
+\pard\plain 
+\sect \sbkpage \pgndec \pgnrestart
+\sect \sectd \sbknone
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Data Structure Index\par \pard\plain 
+{\tc \v Data Structure Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Data Structures\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here are the data structures with brief descriptions:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b registo} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACL \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b registo2} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACT \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b registo3} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADA \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+File Index\par \pard\plain 
+{\tc \v File Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+File List\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here is a list of all documented files with brief descriptions:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b C:/Users/wados/OneDrive/Ambiente de Trabalho/stuff/eduardo/licenciatura/2 semestre/Estrutura_dados/Estrutura_dados/TrabalhoPratico_23005/TrabalhoPratico_23005/{\b Header.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAB \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b C:/Users/wados/OneDrive/Ambiente de Trabalho/stuff/eduardo/licenciatura/2 semestre/Estrutura_dados/Estrutura_dados/TrabalhoPratico_23005/TrabalhoPratico_23005/{\b main.c} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABE \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b C:/Users/wados/OneDrive/Ambiente de Trabalho/stuff/eduardo/licenciatura/2 semestre/Estrutura_dados/Estrutura_dados/TrabalhoPratico_23005/TrabalhoPratico_23005/{\b meioTransporte.c} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABL \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Data Structure Documentation{\tc \v Data Structure Documentation}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+registo Struct Reference\par \pard\plain 
+{\tc\tcl2 \v registo}
+{\xe \v registo}
+{\bkmkstart AAAAAAAACL}
+{\bkmkend AAAAAAAACL}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Data Fields\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+int {\b codigo}{\bkmkstart AAAAAAAACM}
+{\bkmkend AAAAAAAACM}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+char {\b tipo} [50]{\bkmkstart AAAAAAAACN}
+{\bkmkend AAAAAAAACN}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+float {\b bateria}{\bkmkstart AAAAAAAACO}
+{\bkmkend AAAAAAAACO}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+float {\b autonomia}{\bkmkstart AAAAAAAACP}
+{\bkmkend AAAAAAAACP}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+char {\b aluguer} [50]{\bkmkstart AAAAAAAACQ}
+{\bkmkend AAAAAAAACQ}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+char {\b localizacao} [50]{\bkmkstart AAAAAAAACR}
+{\bkmkend AAAAAAAACR}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+struct {\b registo} * {\b seguinte}{\bkmkstart AAAAAAAACS}
+{\bkmkend AAAAAAAACS}
+\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this struct was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/wados/OneDrive/Ambiente de Trabalho/stuff/eduardo/licenciatura/2 semestre/Estrutura_dados/Estrutura_dados/TrabalhoPratico_23005/TrabalhoPratico_23005/{\b Header.h}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+registo2 Struct Reference\par \pard\plain 
+{\tc\tcl2 \v registo2}
+{\xe \v registo2}
+{\bkmkstart AAAAAAAACT}
+{\bkmkend AAAAAAAACT}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Data Fields\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+int {\b codigo}{\bkmkstart AAAAAAAACU}
+{\bkmkend AAAAAAAACU}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+char {\b nome} [50]{\bkmkstart AAAAAAAACV}
+{\bkmkend AAAAAAAACV}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+int {\b numTelemovel}{\bkmkstart AAAAAAAACW}
+{\bkmkend AAAAAAAACW}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+int {\b nif}{\bkmkstart AAAAAAAACX}
+{\bkmkend AAAAAAAACX}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+char {\b mail} [50]{\bkmkstart AAAAAAAACY}
+{\bkmkend AAAAAAAACY}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+struct {\b registo2} * {\b seguinte}{\bkmkstart AAAAAAAACZ}
+{\bkmkend AAAAAAAACZ}
+\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this struct was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/wados/OneDrive/Ambiente de Trabalho/stuff/eduardo/licenciatura/2 semestre/Estrutura_dados/Estrutura_dados/TrabalhoPratico_23005/TrabalhoPratico_23005/{\b Header.h}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+registo3 Struct Reference\par \pard\plain 
+{\tc\tcl2 \v registo3}
+{\xe \v registo3}
+{\bkmkstart AAAAAAAADA}
+{\bkmkend AAAAAAAADA}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Data Fields\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+int {\b codigo}{\bkmkstart AAAAAAAADB}
+{\bkmkend AAAAAAAADB}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+char {\b nome} [50]{\bkmkstart AAAAAAAADC}
+{\bkmkend AAAAAAAADC}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+char {\b password} [50]{\bkmkstart AAAAAAAADD}
+{\bkmkend AAAAAAAADD}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+struct {\b registo3} * {\b seguinte}{\bkmkstart AAAAAAAADE}
+{\bkmkend AAAAAAAADE}
+\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this struct was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/wados/OneDrive/Ambiente de Trabalho/stuff/eduardo/licenciatura/2 semestre/Estrutura_dados/Estrutura_dados/TrabalhoPratico_23005/TrabalhoPratico_23005/{\b Header.h}\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+File Documentation{\tc \v File Documentation}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+C:/Users/wados/OneDrive/Ambiente de Trabalho/stuff/eduardo/licenciatura/2 semestre/Estrutura_dados/Estrutura_dados/TrabalhoPratico_23005/TrabalhoPratico_23005/Header.h File Reference\par \pard\plain 
+{\tc\tcl2 \v C:/Users/wados/OneDrive/Ambiente de Trabalho/stuff/eduardo/licenciatura/2 semestre/Estrutura_dados/Estrutura_dados/TrabalhoPratico_23005/TrabalhoPratico_23005/Header.h}
+{\xe \v C:/Users/wados/OneDrive/Ambiente de Trabalho/stuff/eduardo/licenciatura/2 semestre/Estrutura_dados/Estrutura_dados/TrabalhoPratico_23005/TrabalhoPratico_23005/Header.h}
+{\bkmkstart AAAAAAAAAB}
+{\bkmkend AAAAAAAAAB}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <stdio.h>}\par
+{\f2 #include <string.h>}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Data Structures\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b registo}\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b registo2}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b registo3}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Typedefs\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+typedef struct {\b registo} {\b meioTransporte}{\bkmkstart AAAAAAAAAC}
+{\bkmkend AAAAAAAAAC}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+typedef struct {\b registo2} {\b cliente}{\bkmkstart AAAAAAAAAD}
+{\bkmkend AAAAAAAAAD}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+typedef struct {\b registo3} {\b gestor}{\bkmkstart AAAAAAAAAE}
+{\bkmkend AAAAAAAAAE}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b guardarMeio} ({\b meioTransporte} *inicio)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+guarda os valores inseridos na fun\'E7\'E3o inserirMeio, no ficheiro de texto "meios.txt", a fun\'E7\'E3o ir\'E1 guardar o c\'F3digo do meio, o tipo do meio, o estado da bateria, a autonomia do meio(em km), o estado de aluguer, e a sua localiza\'E7\'E3o. \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b guardarCliente} ({\b cliente} *inicio)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+guarda os valores inseridos na fun\'E7\'E3o inserirCLiente, no ficheiro de texto "clientes.txt", ir\'E1 guardar o c\'F3digo do cliente, o nome do cliente, o n\'FAmero de tel\'E9movel, o nif e o mail do cliente \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b guardarGestor} ({\b gestor} *inicio)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+guarda os valores inseridos na fun\'E7\'E3o inserirGestor, no ficheiro de texto "gestores.txt", ir\'E1 guardar o c\'F3digo do gestor, o nome do gestor e a sua password \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b meioTransporte} * {\b lerMeio} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 ler o ficheiro de texto "meios.txt" \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b cliente} * {\b lerCliente} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 ler o ficheiro de texto "clientes.txt" \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b gestor} * {\b lerGestor} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 ler o ficheiro de texto "gestores.txt" \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b existeMeio} ({\b meioTransporte} *inicio, int cod)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o verifica se existe determinado meio de transporte atrav\'E9s do c\'F3digo do meio, caso exista a fun\'E7\'E3o, atrav\'E9s do cliclo "while" indica que esse meio de transporte j\'E1 existe \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b existeCliente} ({\b cliente} *inicio, int cod)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o verifica se existe determinado clinte atrav\'E9s do c\'F3digo do cliente, caso exista a fun\'E7\'E3o, atrav\'E9s do cliclo "while" indica que esse cliente j\'E1 existe \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b existeGestor} ({\b gestor} *inicio, int cod)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o verifica se existe determinado clinte atrav\'E9s do c\'F3digo do cliente, caso exista a fun\'E7\'E3o, atrav\'E9s do cliclo "while" indica que esse cliente j\'E1 existe \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b listarMeios} ({\b meioTransporte} *inicio)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 listar os dados do meio de transporte \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b listarCliente} ({\b cliente} *inicio)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 listar os dados do cliente \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b listarGestor} ({\b gestor} *inicio)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 listar os dados do gestor \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b meioTransporte} * {\b inserirMeio} ({\b meioTransporte} *inicio, int cod, char tipo[], float bat, float aut, char alug[], char local[])\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Insere os dados do c\'F3digo do meio de transporte, o tipo do meio, o estado da bateria, a autonomia, o estado de alugado e a localiza\'E7\'E3o do meio de transporte. A inser\'E7\'E3o \'E9 realizada no in\'EDcio da lista ligada A fun\'E7\'E3o devolve como resultado o novo endere\'E7o inicial da lista ligada \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b cliente} * {\b inserirCliente} ({\b cliente} *inicio, int cod, char name[], int numTel, int NIF, char email[])\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Insere os dados do c\'F3digo cliente, o nome, o n\'FAmero de tel\'E9movel, o nif e o email do cliente A inser\'E7\'E3o \'E9 realizada no in\'EDcio da lista ligada A fun\'E7\'E3o devolve como resultado o novo endere\'E7o inicial da lista ligada \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b gestor} * {\b inserirGestor} ({\b gestor} *inicio, int cod, char name[], char pass[])\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Insere os dados do c\'F3digo do gestor, o nome e a sua password A inser\'E7\'E3o \'E9 realizada no in\'EDcio da lista ligada A fun\'E7\'E3o devolve como resultado o novo endere\'E7o inicial da lista ligada \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b meioTransporte} * {\b removerMeio} ({\b meioTransporte} *inicio, int cod)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 remover os dados do meio de transporte a partir do c\'F3digo do meio de transporte \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b cliente} * {\b removerCliente} ({\b cliente} *inicio, int cod)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 remover os dados do cliente a partir do c\'F3digo do cliente \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b gestor} * {\b removerGestor} ({\b gestor} *inicio, int cod)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 remover os dados do gestor a partir do c\'F3digo do gestor \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b meioTransporte} * {\b alterarMeio} ({\b meioTransporte} *inicio, int cod, char tipo[], float bat, float aut, char alug[], char local[])\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 alterar os dados do meio de transporte que o utilizador pretende atrav\'E9s do c\'F3digo do meio de transporte \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b cliente} * {\b alterarCliente} ({\b cliente} *inicio, int cod, char name[], int numTel, int NIF, char email[])\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 alterar os dados do cliente que o utilizador pretender atrav\'E9s do c\'F3digo de cliente \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b gestor} * {\b alterarGestor} ({\b gestor} *inicio, int cod, char name[], char pass)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 alterar os dados do cliente que o utilizador pretender atrav\'E9s do c\'F3digo de cliente \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b registoAluguer} ({\b meioTransporte} *inicio, int cod)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Esta fun\'E7\'E3o ir\'E1 alterar o estado de aluguer do meio de transporte \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b meioTransporte} * {\b Ordenar} ({\b meioTransporte} *inicio)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Fun\'E7\'E3o para ordenar os meios de transporte por ordem decrescente de autonomia \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b listarMeiosAutonomia} ({\b meioTransporte} *listagem)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Fun\'E7\'E3o que lista os meios de transporte \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b listarMeiosLocalizacao} ({\b meioTransporte} *inicio, char local[])\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 permitir a listagem dos meios de transporte que est\'E3o localizados numa determinada localiza\'E7\'E3o \par}
+}{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Author\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Eduardo Queir\'F3s \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Date\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+March 2023 \par
+}}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v alterarCliente\:Header.h}
+{\xe \v Header.h\:alterarCliente}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b cliente} * alterarCliente ({\b cliente} *  {\i inicio}, int  {\i cod}, char  {\i name}[], int  {\i numTel}, int  {\i NIF}, char  {\i email}[])}}
+\par
+{\bkmkstart AAAAAAAAAF}
+{\bkmkend AAAAAAAAAF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 alterar os dados do cliente que o utilizador pretender atrav\'E9s do c\'F3digo de cliente \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- alterarCliente \\params- inicio \\params- cod \\params- name \\params- numTel \\params- NIF \\params- email \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+- Para os dados do cliente serem alterados, ap\'F3s o utilizador alterar os dados dever\'E1 usar a fun\'E7\'E3o guardarCLiente \par
+}}}}
+{\xe \v alterarGestor\:Header.h}
+{\xe \v Header.h\:alterarGestor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b gestor} * alterarGestor ({\b gestor} *  {\i inicio}, int  {\i cod}, char  {\i name}[], char  {\i pass})}}
+\par
+{\bkmkstart AAAAAAAAAG}
+{\bkmkend AAAAAAAAAG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 alterar os dados do cliente que o utilizador pretender atrav\'E9s do c\'F3digo de cliente \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- alterarGestor \\params- inicio \\params- cod \\params- name \\params- pass \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+- Para os dados do gestor serem alterados, ap\'F3s o utilizador alterar os dados dever\'E1 usar a fun\'E7\'E3o guardarGestor \par
+}}}}
+{\xe \v alterarMeio\:Header.h}
+{\xe \v Header.h\:alterarMeio}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b meioTransporte} * alterarMeio ({\b meioTransporte} *  {\i inicio}, int  {\i cod}, char  {\i tipo}[], float  {\i bat}, float  {\i aut}, char  {\i alug}[], char  {\i local}[])}}
+\par
+{\bkmkstart AAAAAAAAAH}
+{\bkmkend AAAAAAAAAH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 alterar os dados do meio de transporte que o utilizador pretende atrav\'E9s do c\'F3digo do meio de transporte \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- alterarMeio \\params- inicio \\params- cod \\params- tipo \\params- bat \\params- aut \\params- alug \\params- local \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+- Para os dados do meio serem alterados, ap\'F3s o utilizador alterar os dados dever\'E1 usar a fun\'E7\'E3o guardarMeio \par
+}}}}
+{\xe \v existeCliente\:Header.h}
+{\xe \v Header.h\:existeCliente}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int existeCliente ({\b cliente} *  {\i inicio}, int  {\i cod})}}
+\par
+{\bkmkstart AAAAAAAAAI}
+{\bkmkend AAAAAAAAAI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o verifica se existe determinado clinte atrav\'E9s do c\'F3digo do cliente, caso exista a fun\'E7\'E3o, atrav\'E9s do cliclo "while" indica que esse cliente j\'E1 existe \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- existeCliente \\params- inicio \\params- cod \par
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s83\li1080\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+- indica se existe, ou n\'E3o, um cliente com o mesmo c\'F3digo na lista ligada \par
+}}}
+}}
+{\xe \v existeGestor\:Header.h}
+{\xe \v Header.h\:existeGestor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int existeGestor ({\b gestor} *  {\i inicio}, int  {\i cod})}}
+\par
+{\bkmkstart AAAAAAAAAJ}
+{\bkmkend AAAAAAAAAJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o verifica se existe determinado clinte atrav\'E9s do c\'F3digo do cliente, caso exista a fun\'E7\'E3o, atrav\'E9s do cliclo "while" indica que esse cliente j\'E1 existe \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- existeGestor \\params- inicio \\params- cod \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+- indica se existe, ou n\'E3o, um gestor com o mesmo c\'F3digo na lista ligada \par
+}}}}
+{\xe \v existeMeio\:Header.h}
+{\xe \v Header.h\:existeMeio}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int existeMeio ({\b meioTransporte} *  {\i inicio}, int  {\i cod})}}
+\par
+{\bkmkstart AAAAAAAAAK}
+{\bkmkend AAAAAAAAAK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o verifica se existe determinado meio de transporte atrav\'E9s do c\'F3digo do meio, caso exista a fun\'E7\'E3o, atrav\'E9s do cliclo "while" indica que esse meio de transporte j\'E1 existe \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- existeMeio \\params- inicio \\params- cod \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+- indica se existe, ou n\'E3o, um meio com o mesmo c\'F3digo na lista ligada \par
+}}}}
+{\xe \v guardarCliente\:Header.h}
+{\xe \v Header.h\:guardarCliente}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int guardarCliente ({\b cliente} *  {\i inicio})}}
+\par
+{\bkmkstart AAAAAAAAAL}
+{\bkmkend AAAAAAAAAL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+guarda os valores inseridos na fun\'E7\'E3o inserirCLiente, no ficheiro de texto "clientes.txt", ir\'E1 guardar o c\'F3digo do cliente, o nome do cliente, o n\'FAmero de tel\'E9movel, o nif e o mail do cliente \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- guardarCliente \\params- inicio \par
+}}
+{\xe \v guardarGestor\:Header.h}
+{\xe \v Header.h\:guardarGestor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int guardarGestor ({\b gestor} *  {\i inicio})}}
+\par
+{\bkmkstart AAAAAAAAAM}
+{\bkmkend AAAAAAAAAM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+guarda os valores inseridos na fun\'E7\'E3o inserirGestor, no ficheiro de texto "gestores.txt", ir\'E1 guardar o c\'F3digo do gestor, o nome do gestor e a sua password \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- guardarGestor \\params- inicio \par
+}}
+{\xe \v guardarMeio\:Header.h}
+{\xe \v Header.h\:guardarMeio}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int guardarMeio ({\b meioTransporte} *  {\i inicio})}}
+\par
+{\bkmkstart AAAAAAAAAN}
+{\bkmkend AAAAAAAAAN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+guarda os valores inseridos na fun\'E7\'E3o inserirMeio, no ficheiro de texto "meios.txt", a fun\'E7\'E3o ir\'E1 guardar o c\'F3digo do meio, o tipo do meio, o estado da bateria, a autonomia do meio(em km), o estado de aluguer, e a sua localiza\'E7\'E3o. \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- guardarMeio \\params- inicio  \par
+}}
+{\xe \v inserirCliente\:Header.h}
+{\xe \v Header.h\:inserirCliente}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b cliente} * inserirCliente ({\b cliente} *  {\i inicio}, int  {\i cod}, char  {\i name}[], int  {\i numTel}, int  {\i NIF}, char  {\i email}[])}}
+\par
+{\bkmkstart AAAAAAAAAO}
+{\bkmkend AAAAAAAAAO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Insere os dados do c\'F3digo cliente, o nome, o n\'FAmero de tel\'E9movel, o nif e o email do cliente A inser\'E7\'E3o \'E9 realizada no in\'EDcio da lista ligada A fun\'E7\'E3o devolve como resultado o novo endere\'E7o inicial da lista ligada \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- inserirCliente \\params- inicio \\params- cod \\params- name \\params- numTel \\params- NIF \\params- email \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+- Utilizando a fun\'E7\'E3o existeCliente, antes de inserirmos os valores, verificamos se existe um cliente com o mesmo c\'F3digo, de seguida se o apontador da lista ligada for diferente de nulo, insere os dados do cliente \par
+}}}}
+{\xe \v inserirGestor\:Header.h}
+{\xe \v Header.h\:inserirGestor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b gestor} * inserirGestor ({\b gestor} *  {\i inicio}, int  {\i cod}, char  {\i name}[], char  {\i pass}[])}}
+\par
+{\bkmkstart AAAAAAAAAP}
+{\bkmkend AAAAAAAAAP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Insere os dados do c\'F3digo do gestor, o nome e a sua password A inser\'E7\'E3o \'E9 realizada no in\'EDcio da lista ligada A fun\'E7\'E3o devolve como resultado o novo endere\'E7o inicial da lista ligada \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- inserirGestor \\params- inicio \\params- cod \\params- name \\params- pass \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+- Utilizando a fun\'E7\'E3o existeGestor, antes de inserirmos os valores, verificamos se existe um gestor com o mesmo c\'F3digo, de seguida se o apontador da lista ligada for diferente de nulo, insere os dados do gestor \par
+}}}}
+{\xe \v inserirMeio\:Header.h}
+{\xe \v Header.h\:inserirMeio}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b meioTransporte} * inserirMeio ({\b meioTransporte} *  {\i inicio}, int  {\i cod}, char  {\i tipo}[], float  {\i bat}, float  {\i aut}, char  {\i alug}[], char  {\i local}[])}}
+\par
+{\bkmkstart AAAAAAAAAQ}
+{\bkmkend AAAAAAAAAQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Insere os dados do c\'F3digo do meio de transporte, o tipo do meio, o estado da bateria, a autonomia, o estado de alugado e a localiza\'E7\'E3o do meio de transporte. A inser\'E7\'E3o \'E9 realizada no in\'EDcio da lista ligada A fun\'E7\'E3o devolve como resultado o novo endere\'E7o inicial da lista ligada \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- inserirMeio \\params- inicio \\params- cod \\params- tipo \\params- bat \\params- aut \\params- alug \\params- local \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+- Utilizando a fun\'E7\'E3o existeMeio, antes de inserirmos os valores, verificamos se existe um meio de transporte com o mesmo c\'F3digo, de seguida se o apontador da lista ligada for diferente de nulo, insere os dados do meio de transporte \par
+ \par
+}}}}
+{\xe \v lerCliente\:Header.h}
+{\xe \v Header.h\:lerCliente}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b cliente} * lerCliente ()}}
+\par
+{\bkmkstart AAAAAAAAAR}
+{\bkmkend AAAAAAAAAR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 ler o ficheiro de texto "clientes.txt" \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- lerCliente  \par
+}}
+{\xe \v lerGestor\:Header.h}
+{\xe \v Header.h\:lerGestor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b gestor} * lerGestor ()}}
+\par
+{\bkmkstart AAAAAAAAAS}
+{\bkmkend AAAAAAAAAS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 ler o ficheiro de texto "gestores.txt" \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- lerGestor \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+\par
+}}}}
+{\xe \v lerMeio\:Header.h}
+{\xe \v Header.h\:lerMeio}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b meioTransporte} * lerMeio ()}}
+\par
+{\bkmkstart AAAAAAAAAT}
+{\bkmkend AAAAAAAAAT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 ler o ficheiro de texto "meios.txt" \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- lerMeio  \par
+}}
+{\xe \v listarCliente\:Header.h}
+{\xe \v Header.h\:listarCliente}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void listarCliente ({\b cliente} *  {\i inicio})}}
+\par
+{\bkmkstart AAAAAAAAAU}
+{\bkmkend AAAAAAAAAU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 listar os dados do cliente \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- listarCliente \\params- inicio  \par
+}}
+{\xe \v listarGestor\:Header.h}
+{\xe \v Header.h\:listarGestor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void listarGestor ({\b gestor} *  {\i inicio})}}
+\par
+{\bkmkstart AAAAAAAAAV}
+{\bkmkend AAAAAAAAAV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 listar os dados do gestor \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- listarCliente \\params- inicio  \par
+}}
+{\xe \v listarMeios\:Header.h}
+{\xe \v Header.h\:listarMeios}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void listarMeios ({\b meioTransporte} *  {\i inicio})}}
+\par
+{\bkmkstart AAAAAAAAAW}
+{\bkmkend AAAAAAAAAW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 listar os dados do meio de transporte \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- listarMeios \\params- inicio  \par
+}}
+{\xe \v listarMeiosAutonomia\:Header.h}
+{\xe \v Header.h\:listarMeiosAutonomia}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void listarMeiosAutonomia ({\b meioTransporte} *  {\i listagem})}}
+\par
+{\bkmkstart AAAAAAAAAX}
+{\bkmkend AAAAAAAAAX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Fun\'E7\'E3o que lista os meios de transporte \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- listarMeiosAutonomia \\params- listagem  \par
+}}
+{\xe \v listarMeiosLocalizacao\:Header.h}
+{\xe \v Header.h\:listarMeiosLocalizacao}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void listarMeiosLocalizacao ({\b meioTransporte} *  {\i inicio}, char  {\i local}[])}}
+\par
+{\bkmkstart AAAAAAAAAY}
+{\bkmkend AAAAAAAAAY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 permitir a listagem dos meios de transporte que est\'E3o localizados numa determinada localiza\'E7\'E3o \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- listarMeiosLocalizacao \\params- inicio \\params- local \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+- A partir da localiza\'E7\'E3o do meio de transporte, se determinado(s) meio(s) de transporte estiver na mesma localiza\'E7\'E3o, o programa ir\'E1 listar os dados desses(s) meio(s) \par
+}}}}
+{\xe \v Ordenar\:Header.h}
+{\xe \v Header.h\:Ordenar}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b meioTransporte} * Ordenar ({\b meioTransporte} *  {\i inicio})}}
+\par
+{\bkmkstart AAAAAAAAAZ}
+{\bkmkend AAAAAAAAAZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Fun\'E7\'E3o para ordenar os meios de transporte por ordem decrescente de autonomia \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- Ordenar \\params- inicio  \par
+}}
+{\xe \v registoAluguer\:Header.h}
+{\xe \v Header.h\:registoAluguer}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void registoAluguer ({\b meioTransporte} *  {\i inicio}, int  {\i cod})}}
+\par
+{\bkmkstart AAAAAAAABA}
+{\bkmkend AAAAAAAABA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Esta fun\'E7\'E3o ir\'E1 alterar o estado de aluguer do meio de transporte \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- registoAluguer \\params- inicio \\params- cod \\params- alug  \par
+}}
+{\xe \v removerCliente\:Header.h}
+{\xe \v Header.h\:removerCliente}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b cliente} * removerCliente ({\b cliente} *  {\i inicio}, int  {\i cod})}}
+\par
+{\bkmkstart AAAAAAAABB}
+{\bkmkend AAAAAAAABB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 remover os dados do cliente a partir do c\'F3digo do cliente \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- removerCliente \\params- inicio \\params- cod  \par
+}}
+{\xe \v removerGestor\:Header.h}
+{\xe \v Header.h\:removerGestor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b gestor} * removerGestor ({\b gestor} *  {\i inicio}, int  {\i cod})}}
+\par
+{\bkmkstart AAAAAAAABC}
+{\bkmkend AAAAAAAABC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 remover os dados do gestor a partir do c\'F3digo do gestor \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- removerGestor \\params- inicio \\params- cod  \par
+}}
+{\xe \v removerMeio\:Header.h}
+{\xe \v Header.h\:removerMeio}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b meioTransporte} * removerMeio ({\b meioTransporte} *  {\i inicio}, int  {\i cod})}}
+\par
+{\bkmkstart AAAAAAAABD}
+{\bkmkend AAAAAAAABD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 remover os dados do meio de transporte a partir do c\'F3digo do meio de transporte \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- removerMeio \\params- inicio \\params- cod  \par
+}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Header.h\par \pard\plain 
+{\tc\tcl2 \v C:/Users/wados/OneDrive/Ambiente de Trabalho/stuff/eduardo/licenciatura/2 semestre/Estrutura_dados/Estrutura_dados/TrabalhoPratico_23005/TrabalhoPratico_23005/Header.h}
+{\xe \v C:/Users/wados/OneDrive/Ambiente de Trabalho/stuff/eduardo/licenciatura/2 semestre/Estrutura_dados/Estrutura_dados/TrabalhoPratico_23005/TrabalhoPratico_23005/Header.h}
+{\bkmkstart AAAAAAAAAA}
+{\bkmkend AAAAAAAAAA}
+Go to the documentation of this file.{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 {\cf20 /*****************************************************************/}\par
+8 {\cf21 #pragma once}\par
+9 {\cf21 #include<stdio.h>}\par
+10 {\cf21 #include <string.h>}\par
+11 {\cf21 #pragma warning(disable: 4996)}\par
+12 \par
+13 \par
+14 {\cf17 typedef} {\cf17 struct }registo \{\par
+15     {\cf18 int} codigo; {\cf20 //codigo do meio de transporte}\par
+16     {\cf18 char} tipo[50];{\cf20 //tipo de meio de transporte(ex: trotinete el\'E9trica)}\par
+17     {\cf18 float} bateria;\par
+18     {\cf18 float} autonomia;\par
+19     {\cf18 char} aluguer[50]; {\cf20 //registo de aluguer}\par
+20     {\cf18 char} localizacao[50]; {\cf20 //localiza\'E7\'E3o do meio de transporte}\par
+21     {\cf17 struct }registo* seguinte; {\cf20 //endere\'E7o de mem\'F3ria para uma struct registo}\par
+22 \}meioTransporte;\par
+23 \par
+24 {\cf17 typedef} {\cf17 struct }registo2 \{\par
+25     {\cf18 int} codigo; {\cf20 //codigo do cliente}\par
+26     {\cf18 char} nome[50]; {\cf20 //nome do cliente}\par
+27     {\cf18 int} numTelemovel; {\cf20 //numero de telefone}\par
+28     {\cf18 int} nif; \par
+29     {\cf18 char} mail[50];\par
+30     {\cf17 struct }registo2* seguinte; {\cf20 //endere\'E7o de mem\'F3ria para uma struct registo}\par
+31 \}cliente;\par
+32 \par
+33 \par
+34 {\cf17 typedef} {\cf17 struct }registo3 \{\par
+35     {\cf18 int} codigo; {\cf20 //codigo do gestor}\par
+36     {\cf18 char} nome[50]; {\cf20 //nome do gestor}\par
+37     {\cf18 char} password[50]; {\cf20 //password do gestor}\par
+38     {\cf17 struct }registo3* seguinte; {\cf20 //endere\'E7o de mem\'F3ria para uma struct registo}\par
+39 \}gestor;\par
+40 \par
+41 \par
+42 \par
+43 {\cf20 //FUN\'C7\'D5ES PARA GUARDAR NO FICHEIRO DE TEXTO}\par
+44     {\cf20 //guardar os meios de transporte}\par
+45 \par
+46 {\cf18 int} guardarMeio(meioTransporte* inicio);\par
+47     {\cf20 //guardar os clientes }\par
+48 {\cf18 int} guardarCliente(cliente* inicio);\par
+49     {\cf20 //guardar os gestores}\par
+50 {\cf18 int} guardarGestor(gestor* inicio);\par
+51 \par
+52 {\cf20 //FUN\'C7\'D5ES PARA LER OS DADOS}\par
+53     {\cf20 //ler meios}\par
+54 meioTransporte* lerMeio();\par
+55     {\cf20 //ler clientes}\par
+56 cliente* lerCliente();\par
+57     {\cf20 //ler gestores}\par
+58 gestor* lerGestor();\par
+59 \par
+60 {\cf20 //FUN\'C7\'D5ES PARA VERIFICAR SE DETERMINADO DADO J\'C1 EXISTE}\par
+61     {\cf20 //fun\'E7\'E3o para verificar se j\'E1 existe o tipo de transporte}\par
+62 {\cf18 int} existeMeio(meioTransporte* inicio, {\cf18 int} cod);\par
+63     {\cf20 //fun\'E7\'E3o para verificar se j\'E1 existe cliente}\par
+64 {\cf18 int} existeCliente(cliente* inicio, {\cf18 int} cod);\par
+65     {\cf20 //fun\'E7\'E3o para verificar se j\'E1 existe o gestor}\par
+66 {\cf18 int} existeGestor(gestor* inicio, {\cf18 int} cod);\par
+67 \par
+68 {\cf20 //FUN\'C7\'D5ES PARA LISTAR OS DADOS }\par
+69     {\cf20 //fun\'E7\'E3o para listar os dados do meio de transporte}\par
+70 {\cf18 void} listarMeios(meioTransporte* inicio);\par
+71     {\cf20 //fun\'E7\'E3o para listar os dados do cliente}\par
+72 {\cf18 void} listarCliente(cliente* inicio);\par
+73     {\cf20 //fun\'E7\'E3o para listar os dados do gestor}\par
+74 {\cf18 void} listarGestor(gestor* inicio);\par
+75 \par
+76 \par
+77 {\cf20 //fun\'E7\'F5es para inserir um novo registo}\par
+78     {\cf20 //fun\'E7\'E3o para inserir meio de transporte}\par
+79 meioTransporte* inserirMeio(meioTransporte* inicio, {\cf18 int} cod, {\cf18 char} tipo[], {\cf18 float} bat, {\cf18 float} aut, {\cf18 char} alug[], {\cf18 char} local[]);\par
+80     {\cf20 //fun\'E7\'E3o para inserir cliente}\par
+81 cliente* inserirCliente(cliente* inicio, {\cf18 int} cod, {\cf18 char} name[], {\cf18 int} numTel, {\cf18 int} NIF, {\cf18 char} email[]);\par
+82     {\cf20 //fun\'E7\'E3o para inserir gestor}\par
+83 gestor* inserirGestor(gestor* inicio, {\cf18 int} cod, {\cf18 char} name[], {\cf18 char} pass[]);\par
+84 \par
+85 \par
+86 {\cf20 //fun\'E7\'F5es para remover determinado tipo de dados}\par
+87     {\cf20 //fun\'E7\'E3o para remover meio de transporte}\par
+88 meioTransporte* removerMeio(meioTransporte* inicio, {\cf18 int} cod);\par
+89     {\cf20 //fun\'E7\'E3o para remover cliente}\par
+90 cliente* removerCliente(cliente* inicio, {\cf18 int} cod);\par
+91     {\cf20 //fun\'E7\'E3o para remover gestor}\par
+92 gestor* removerGestor(gestor* inicio, {\cf18 int} cod);\par
+93 \par
+94 {\cf20 //fun\'E7\'F5es para alterar detemerminado tipo de dados}\par
+95     {\cf20 //fun\'E7\'E3o para alterar meio transporte}\par
+96 meioTransporte* alterarMeio(meioTransporte* inicio, {\cf18 int} cod, {\cf18 char} tipo[], {\cf18 float} bat, {\cf18 float} aut, {\cf18 char} alug[], {\cf18 char} local[]);\par
+97     {\cf20 //fun\'E7\'E3o para alterar cliente}\par
+98 cliente* alterarCliente(cliente* inicio, {\cf18 int} cod, {\cf18 char} name[], {\cf18 int} numTel, {\cf18 int} NIF, {\cf18 char} email[]);\par
+99 {\cf20 //fun\'E7\'E3o para alterar gestor}\par
+100 gestor* alterarGestor(gestor* inicio, {\cf18 int} cod, {\cf18 char} name[], {\cf18 char} pass);\par
+101 \par
+102 \par
+103 {\cf20 //fun\'E7\'E3o para registo de aluguer de um determinado meio de mobilidade eletrica}\par
+104 {\cf18 void} registoAluguer(meioTransporte* inicio, {\cf18 int} cod); \par
+105 \par
+106 {\cf20 //ordenar meios de transporte por ordem decrescente de autonomia}\par
+107 meioTransporte* Ordenar(meioTransporte* inicio);\par
+108 {\cf20 //listagem dos meios de mobilidade el\'E9trica por ordem decrescente de autonomia}\par
+109 {\cf18 void} listarMeiosAutonomia(meioTransporte* listagem);\par
+110 \par
+111 {\cf20 //listagem de meios de mobilidade existentes numa localiza\'E7\'E3o com determinado geoc\'F3digo}\par
+112 {\cf18 void} listarMeiosLocalizacao(meioTransporte* inicio, {\cf18 char} local[]); \par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+C:/Users/wados/OneDrive/Ambiente de Trabalho/stuff/eduardo/licenciatura/2 semestre/Estrutura_dados/Estrutura_dados/TrabalhoPratico_23005/TrabalhoPratico_23005/main.c File Reference\par \pard\plain 
+{\tc\tcl2 \v C:/Users/wados/OneDrive/Ambiente de Trabalho/stuff/eduardo/licenciatura/2 semestre/Estrutura_dados/Estrutura_dados/TrabalhoPratico_23005/TrabalhoPratico_23005/main.c}
+{\xe \v C:/Users/wados/OneDrive/Ambiente de Trabalho/stuff/eduardo/licenciatura/2 semestre/Estrutura_dados/Estrutura_dados/TrabalhoPratico_23005/TrabalhoPratico_23005/main.c}
+{\bkmkstart AAAAAAAABE}
+{\bkmkend AAAAAAAABE}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <stdio.h>}\par
+{\f2 #include "Header.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b menuPrincipal} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Esta fun\'E7\'E3o ser\'E1 utilizada como um menu principal do programa. Este menu ser\'E1 apresentado no in\'EDcio do programa. A fun\'E7\'E3o ir\'E1 perguntar ao utilizador qual o tipo de utilizador \'E9(Gestor ou Cliente). \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b menuGestor} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o mostra as opera\'E7\'F5es que o gestor pode realizar, o gestor consegue realizar todas as opera\'E7\'F5es \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b menuCliente} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o mostra as opera\'E7\'F5es que o cliente pode realizar, o cliente n\'E3o consegue fazer todas as opera\'E7\'F5es \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b Gestor} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o funciona em rela\'E7\'E3o ao menuGestor, isto \'E9, consoante a op\'E7\'E3o que o gestor escolher, a fun\'E7\'E3o ir\'E1 executar a fun\'E7\'E3o correspondente. \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b Cliente} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o funciona em rela\'E7\'E3o ao menuCliente, isto \'E9, consoante a op\'E7\'E3o que o cliente escolher, a fun\'E7\'E3o ir\'E1 executar a fun\'E7\'E3o correspondente. \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b main} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 "abrir" um menu consoante a resposta do utilizador no menu principal. Caso o utilizador escolha a op\'E7\'E3o 1 o programa ir\'E1 abrir o menu do gestor, caso escolha 2 ir\'E1 abrir o menu do cliente A fun\'E7\'E3o tamb\'E9m faz com que as listas ligadas fiquem vazias \par}
+}{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Author\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Eduardo Queir\'F3s \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Date\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+March 2023 \par
+}}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v Cliente\:main.c}
+{\xe \v main.c\:Cliente}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int Cliente ()}}
+\par
+{\bkmkstart AAAAAAAABF}
+{\bkmkend AAAAAAAABF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o funciona em rela\'E7\'E3o ao menuCliente, isto \'E9, consoante a op\'E7\'E3o que o cliente escolher, a fun\'E7\'E3o ir\'E1 executar a fun\'E7\'E3o correspondente. \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- Cliente  \par
+}}
+{\xe \v Gestor\:main.c}
+{\xe \v main.c\:Gestor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int Gestor ()}}
+\par
+{\bkmkstart AAAAAAAABG}
+{\bkmkend AAAAAAAABG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o funciona em rela\'E7\'E3o ao menuGestor, isto \'E9, consoante a op\'E7\'E3o que o gestor escolher, a fun\'E7\'E3o ir\'E1 executar a fun\'E7\'E3o correspondente. \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- Gestor  \par
+}}
+{\xe \v main\:main.c}
+{\xe \v main.c\:main}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int main ()}}
+\par
+{\bkmkstart AAAAAAAABH}
+{\bkmkend AAAAAAAABH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 "abrir" um menu consoante a resposta do utilizador no menu principal. Caso o utilizador escolha a op\'E7\'E3o 1 o programa ir\'E1 abrir o menu do gestor, caso escolha 2 ir\'E1 abrir o menu do cliente A fun\'E7\'E3o tamb\'E9m faz com que as listas ligadas fiquem vazias \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- main  \par
+}}
+{\xe \v menuCliente\:main.c}
+{\xe \v main.c\:menuCliente}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int menuCliente ()}}
+\par
+{\bkmkstart AAAAAAAABI}
+{\bkmkend AAAAAAAABI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o mostra as opera\'E7\'F5es que o cliente pode realizar, o cliente n\'E3o consegue fazer todas as opera\'E7\'F5es \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- menuCliente  \par
+}}
+{\xe \v menuGestor\:main.c}
+{\xe \v main.c\:menuGestor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int menuGestor ()}}
+\par
+{\bkmkstart AAAAAAAABJ}
+{\bkmkend AAAAAAAABJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o mostra as opera\'E7\'F5es que o gestor pode realizar, o gestor consegue realizar todas as opera\'E7\'F5es \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- menuGestor  \par
+}}
+{\xe \v menuPrincipal\:main.c}
+{\xe \v main.c\:menuPrincipal}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int menuPrincipal ()}}
+\par
+{\bkmkstart AAAAAAAABK}
+{\bkmkend AAAAAAAABK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Esta fun\'E7\'E3o ser\'E1 utilizada como um menu principal do programa. Este menu ser\'E1 apresentado no in\'EDcio do programa. A fun\'E7\'E3o ir\'E1 perguntar ao utilizador qual o tipo de utilizador \'E9(Gestor ou Cliente). \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- menuPrincipal  \par
+}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+C:/Users/wados/OneDrive/Ambiente de Trabalho/stuff/eduardo/licenciatura/2 semestre/Estrutura_dados/Estrutura_dados/TrabalhoPratico_23005/TrabalhoPratico_23005/meioTransporte.c File Reference\par \pard\plain 
+{\tc\tcl2 \v C:/Users/wados/OneDrive/Ambiente de Trabalho/stuff/eduardo/licenciatura/2 semestre/Estrutura_dados/Estrutura_dados/TrabalhoPratico_23005/TrabalhoPratico_23005/meioTransporte.c}
+{\xe \v C:/Users/wados/OneDrive/Ambiente de Trabalho/stuff/eduardo/licenciatura/2 semestre/Estrutura_dados/Estrutura_dados/TrabalhoPratico_23005/TrabalhoPratico_23005/meioTransporte.c}
+{\bkmkstart AAAAAAAABL}
+{\bkmkend AAAAAAAABL}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <stdlib.h>}\par
+{\f2 #include <string.h>}\par
+{\f2 #include "Header.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b guardarMeio} ({\b meioTransporte} *inicio)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+guarda os valores inseridos na fun\'E7\'E3o inserirMeio, no ficheiro de texto "meios.txt", a fun\'E7\'E3o ir\'E1 guardar o c\'F3digo do meio, o tipo do meio, o estado da bateria, a autonomia do meio(em km), o estado de aluguer, e a sua localiza\'E7\'E3o. \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b guardarCliente} ({\b cliente} *inicio)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+guarda os valores inseridos na fun\'E7\'E3o inserirCLiente, no ficheiro de texto "clientes.txt", ir\'E1 guardar o c\'F3digo do cliente, o nome do cliente, o n\'FAmero de tel\'E9movel, o nif e o mail do cliente \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b guardarGestor} ({\b gestor} *inicio)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+guarda os valores inseridos na fun\'E7\'E3o inserirGestor, no ficheiro de texto "gestores.txt", ir\'E1 guardar o c\'F3digo do gestor, o nome do gestor e a sua password \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b meioTransporte} * {\b lerMeio} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 ler o ficheiro de texto "meios.txt" \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b cliente} * {\b lerCliente} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 ler o ficheiro de texto "clientes.txt" \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b gestor} * {\b lerGestor} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 ler o ficheiro de texto "gestores.txt" \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b existeMeio} ({\b meioTransporte} *inicio, int cod)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o verifica se existe determinado meio de transporte atrav\'E9s do c\'F3digo do meio, caso exista a fun\'E7\'E3o, atrav\'E9s do cliclo "while" indica que esse meio de transporte j\'E1 existe \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b existeCliente} ({\b cliente} *inicio, int cod)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o verifica se existe determinado clinte atrav\'E9s do c\'F3digo do cliente, caso exista a fun\'E7\'E3o, atrav\'E9s do cliclo "while" indica que esse cliente j\'E1 existe \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b existeGestor} ({\b gestor} *inicio, int cod)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o verifica se existe determinado clinte atrav\'E9s do c\'F3digo do cliente, caso exista a fun\'E7\'E3o, atrav\'E9s do cliclo "while" indica que esse cliente j\'E1 existe \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b meioTransporte} * {\b inserirMeio} ({\b meioTransporte} *inicio, int cod, char tipo[], float bat, float aut, char alug[], char local[])\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Insere os dados do c\'F3digo do meio de transporte, o tipo do meio, o estado da bateria, a autonomia, o estado de alugado e a localiza\'E7\'E3o do meio de transporte. A inser\'E7\'E3o \'E9 realizada no in\'EDcio da lista ligada A fun\'E7\'E3o devolve como resultado o novo endere\'E7o inicial da lista ligada \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b cliente} * {\b inserirCliente} ({\b cliente} *inicio, int cod, char name[], int numTel, int NIF, char email[])\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Insere os dados do c\'F3digo cliente, o nome, o n\'FAmero de tel\'E9movel, o nif e o email do cliente A inser\'E7\'E3o \'E9 realizada no in\'EDcio da lista ligada A fun\'E7\'E3o devolve como resultado o novo endere\'E7o inicial da lista ligada \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b gestor} * {\b inserirGestor} ({\b gestor} *inicio, int cod, char name[], char pass[])\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Insere os dados do c\'F3digo do gestor, o nome e a sua password A inser\'E7\'E3o \'E9 realizada no in\'EDcio da lista ligada A fun\'E7\'E3o devolve como resultado o novo endere\'E7o inicial da lista ligada \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b listarMeios} ({\b meioTransporte} *inicio)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 listar os dados do meio de transporte \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b listarCliente} ({\b cliente} *inicio)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 listar os dados do cliente \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b listarGestor} ({\b gestor} *inicio)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 listar os dados do gestor \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b meioTransporte} * {\b removerMeio} ({\b meioTransporte} *inicio, int cod)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 remover os dados do meio de transporte a partir do c\'F3digo do meio de transporte \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b cliente} * {\b removerCliente} ({\b cliente} *inicio, int cod)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 remover os dados do cliente a partir do c\'F3digo do cliente \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b gestor} * {\b removerGestor} ({\b gestor} *inicio, int cod)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 remover os dados do gestor a partir do c\'F3digo do gestor \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b meioTransporte} * {\b alterarMeio} ({\b meioTransporte} *inicio, int cod, char tipo[], float bat, float aut, char alug[], char local[])\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 alterar os dados do meio de transporte que o utilizador pretende atrav\'E9s do c\'F3digo do meio de transporte \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b cliente} * {\b alterarCliente} ({\b cliente} *inicio, int cod, char name[], int numTel, int NIF, char email[])\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 alterar os dados do cliente que o utilizador pretender atrav\'E9s do c\'F3digo de cliente \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b gestor} * {\b alterarGestor} ({\b gestor} *inicio, int cod, char name[], char pass)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 alterar os dados do cliente que o utilizador pretender atrav\'E9s do c\'F3digo de cliente \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b registoAluguer} ({\b meioTransporte} *inicio, int cod)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Esta fun\'E7\'E3o ir\'E1 alterar o estado de aluguer do meio de transporte \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b meioTransporte} * {\b Ordenar} ({\b meioTransporte} *inicio)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Fun\'E7\'E3o para ordenar os meios de transporte por ordem decrescente de autonomia \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b listarMeiosAutonomia} ({\b meioTransporte} *listagem)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Fun\'E7\'E3o que lista os meios de transporte \par}
+}{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b listarMeiosLocalizacao} ({\b meioTransporte} *inicio, char local[])\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 permitir a listagem dos meios de transporte que est\'E3o localizados numa determinada localiza\'E7\'E3o \par}
+}{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Author\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Eduardo Queir\'F3s \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Date\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+March 2023 \par
+}}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v alterarCliente\:meioTransporte.c}
+{\xe \v meioTransporte.c\:alterarCliente}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b cliente} * alterarCliente ({\b cliente} *  {\i inicio}, int  {\i cod}, char  {\i name}[], int  {\i numTel}, int  {\i NIF}, char  {\i email}[])}}
+\par
+{\bkmkstart AAAAAAAABM}
+{\bkmkend AAAAAAAABM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 alterar os dados do cliente que o utilizador pretender atrav\'E9s do c\'F3digo de cliente \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- alterarCliente \\params- inicio \\params- cod \\params- name \\params- numTel \\params- NIF \\params- email \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+- Para os dados do cliente serem alterados, ap\'F3s o utilizador alterar os dados dever\'E1 usar a fun\'E7\'E3o guardarCLiente \par
+}}}}
+{\xe \v alterarGestor\:meioTransporte.c}
+{\xe \v meioTransporte.c\:alterarGestor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b gestor} * alterarGestor ({\b gestor} *  {\i inicio}, int  {\i cod}, char  {\i name}[], char  {\i pass})}}
+\par
+{\bkmkstart AAAAAAAABN}
+{\bkmkend AAAAAAAABN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 alterar os dados do cliente que o utilizador pretender atrav\'E9s do c\'F3digo de cliente \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- alterarGestor \\params- inicio \\params- cod \\params- name \\params- pass \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+- Para os dados do gestor serem alterados, ap\'F3s o utilizador alterar os dados dever\'E1 usar a fun\'E7\'E3o guardarGestor \par
+}}}}
+{\xe \v alterarMeio\:meioTransporte.c}
+{\xe \v meioTransporte.c\:alterarMeio}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b meioTransporte} * alterarMeio ({\b meioTransporte} *  {\i inicio}, int  {\i cod}, char  {\i tipo}[], float  {\i bat}, float  {\i aut}, char  {\i alug}[], char  {\i local}[])}}
+\par
+{\bkmkstart AAAAAAAABO}
+{\bkmkend AAAAAAAABO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 alterar os dados do meio de transporte que o utilizador pretende atrav\'E9s do c\'F3digo do meio de transporte \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- alterarMeio \\params- inicio \\params- cod \\params- tipo \\params- bat \\params- aut \\params- alug \\params- local \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+- Para os dados do meio serem alterados, ap\'F3s o utilizador alterar os dados dever\'E1 usar a fun\'E7\'E3o guardarMeio \par
+}}}}
+{\xe \v existeCliente\:meioTransporte.c}
+{\xe \v meioTransporte.c\:existeCliente}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int existeCliente ({\b cliente} *  {\i inicio}, int  {\i cod})}}
+\par
+{\bkmkstart AAAAAAAABP}
+{\bkmkend AAAAAAAABP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o verifica se existe determinado clinte atrav\'E9s do c\'F3digo do cliente, caso exista a fun\'E7\'E3o, atrav\'E9s do cliclo "while" indica que esse cliente j\'E1 existe \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- existeCliente \\params- inicio \\params- cod \par
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s83\li1080\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+- indica se existe, ou n\'E3o, um cliente com o mesmo c\'F3digo na lista ligada \par
+}}}
+}}
+{\xe \v existeGestor\:meioTransporte.c}
+{\xe \v meioTransporte.c\:existeGestor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int existeGestor ({\b gestor} *  {\i inicio}, int  {\i cod})}}
+\par
+{\bkmkstart AAAAAAAABQ}
+{\bkmkend AAAAAAAABQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o verifica se existe determinado clinte atrav\'E9s do c\'F3digo do cliente, caso exista a fun\'E7\'E3o, atrav\'E9s do cliclo "while" indica que esse cliente j\'E1 existe \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- existeGestor \\params- inicio \\params- cod \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+- indica se existe, ou n\'E3o, um gestor com o mesmo c\'F3digo na lista ligada \par
+}}}}
+{\xe \v existeMeio\:meioTransporte.c}
+{\xe \v meioTransporte.c\:existeMeio}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int existeMeio ({\b meioTransporte} *  {\i inicio}, int  {\i cod})}}
+\par
+{\bkmkstart AAAAAAAABR}
+{\bkmkend AAAAAAAABR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o verifica se existe determinado meio de transporte atrav\'E9s do c\'F3digo do meio, caso exista a fun\'E7\'E3o, atrav\'E9s do cliclo "while" indica que esse meio de transporte j\'E1 existe \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- existeMeio \\params- inicio \\params- cod \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+- indica se existe, ou n\'E3o, um meio com o mesmo c\'F3digo na lista ligada \par
+}}}}
+{\xe \v guardarCliente\:meioTransporte.c}
+{\xe \v meioTransporte.c\:guardarCliente}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int guardarCliente ({\b cliente} *  {\i inicio})}}
+\par
+{\bkmkstart AAAAAAAABS}
+{\bkmkend AAAAAAAABS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+guarda os valores inseridos na fun\'E7\'E3o inserirCLiente, no ficheiro de texto "clientes.txt", ir\'E1 guardar o c\'F3digo do cliente, o nome do cliente, o n\'FAmero de tel\'E9movel, o nif e o mail do cliente \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- guardarCliente \\params- inicio \par
+}}
+{\xe \v guardarGestor\:meioTransporte.c}
+{\xe \v meioTransporte.c\:guardarGestor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int guardarGestor ({\b gestor} *  {\i inicio})}}
+\par
+{\bkmkstart AAAAAAAABT}
+{\bkmkend AAAAAAAABT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+guarda os valores inseridos na fun\'E7\'E3o inserirGestor, no ficheiro de texto "gestores.txt", ir\'E1 guardar o c\'F3digo do gestor, o nome do gestor e a sua password \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- guardarGestor \\params- inicio \par
+}}
+{\xe \v guardarMeio\:meioTransporte.c}
+{\xe \v meioTransporte.c\:guardarMeio}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int guardarMeio ({\b meioTransporte} *  {\i inicio})}}
+\par
+{\bkmkstart AAAAAAAABU}
+{\bkmkend AAAAAAAABU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+guarda os valores inseridos na fun\'E7\'E3o inserirMeio, no ficheiro de texto "meios.txt", a fun\'E7\'E3o ir\'E1 guardar o c\'F3digo do meio, o tipo do meio, o estado da bateria, a autonomia do meio(em km), o estado de aluguer, e a sua localiza\'E7\'E3o. \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- guardarMeio \\params- inicio  \par
+}}
+{\xe \v inserirCliente\:meioTransporte.c}
+{\xe \v meioTransporte.c\:inserirCliente}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b cliente} * inserirCliente ({\b cliente} *  {\i inicio}, int  {\i cod}, char  {\i name}[], int  {\i numTel}, int  {\i NIF}, char  {\i email}[])}}
+\par
+{\bkmkstart AAAAAAAABV}
+{\bkmkend AAAAAAAABV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Insere os dados do c\'F3digo cliente, o nome, o n\'FAmero de tel\'E9movel, o nif e o email do cliente A inser\'E7\'E3o \'E9 realizada no in\'EDcio da lista ligada A fun\'E7\'E3o devolve como resultado o novo endere\'E7o inicial da lista ligada \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- inserirCliente \\params- inicio \\params- cod \\params- name \\params- numTel \\params- NIF \\params- email \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+- Utilizando a fun\'E7\'E3o existeCliente, antes de inserirmos os valores, verificamos se existe um cliente com o mesmo c\'F3digo, de seguida se o apontador da lista ligada for diferente de nulo, insere os dados do cliente \par
+}}}}
+{\xe \v inserirGestor\:meioTransporte.c}
+{\xe \v meioTransporte.c\:inserirGestor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b gestor} * inserirGestor ({\b gestor} *  {\i inicio}, int  {\i cod}, char  {\i name}[], char  {\i pass}[])}}
+\par
+{\bkmkstart AAAAAAAABW}
+{\bkmkend AAAAAAAABW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Insere os dados do c\'F3digo do gestor, o nome e a sua password A inser\'E7\'E3o \'E9 realizada no in\'EDcio da lista ligada A fun\'E7\'E3o devolve como resultado o novo endere\'E7o inicial da lista ligada \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- inserirGestor \\params- inicio \\params- cod \\params- name \\params- pass \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+- Utilizando a fun\'E7\'E3o existeGestor, antes de inserirmos os valores, verificamos se existe um gestor com o mesmo c\'F3digo, de seguida se o apontador da lista ligada for diferente de nulo, insere os dados do gestor \par
+}}}}
+{\xe \v inserirMeio\:meioTransporte.c}
+{\xe \v meioTransporte.c\:inserirMeio}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b meioTransporte} * inserirMeio ({\b meioTransporte} *  {\i inicio}, int  {\i cod}, char  {\i tipo}[], float  {\i bat}, float  {\i aut}, char  {\i alug}[], char  {\i local}[])}}
+\par
+{\bkmkstart AAAAAAAABX}
+{\bkmkend AAAAAAAABX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Insere os dados do c\'F3digo do meio de transporte, o tipo do meio, o estado da bateria, a autonomia, o estado de alugado e a localiza\'E7\'E3o do meio de transporte. A inser\'E7\'E3o \'E9 realizada no in\'EDcio da lista ligada A fun\'E7\'E3o devolve como resultado o novo endere\'E7o inicial da lista ligada \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- inserirMeio \\params- inicio \\params- cod \\params- tipo \\params- bat \\params- aut \\params- alug \\params- local \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+- Utilizando a fun\'E7\'E3o existeMeio, antes de inserirmos os valores, verificamos se existe um meio de transporte com o mesmo c\'F3digo, de seguida se o apontador da lista ligada for diferente de nulo, insere os dados do meio de transporte \par
+ \par
+}}}}
+{\xe \v lerCliente\:meioTransporte.c}
+{\xe \v meioTransporte.c\:lerCliente}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b cliente} * lerCliente ()}}
+\par
+{\bkmkstart AAAAAAAABY}
+{\bkmkend AAAAAAAABY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 ler o ficheiro de texto "clientes.txt" \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- lerCliente  \par
+}}
+{\xe \v lerGestor\:meioTransporte.c}
+{\xe \v meioTransporte.c\:lerGestor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b gestor} * lerGestor ()}}
+\par
+{\bkmkstart AAAAAAAABZ}
+{\bkmkend AAAAAAAABZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 ler o ficheiro de texto "gestores.txt" \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- lerGestor \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+\par
+}}}}
+{\xe \v lerMeio\:meioTransporte.c}
+{\xe \v meioTransporte.c\:lerMeio}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b meioTransporte} * lerMeio ()}}
+\par
+{\bkmkstart AAAAAAAACA}
+{\bkmkend AAAAAAAACA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 ler o ficheiro de texto "meios.txt" \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- lerMeio  \par
+}}
+{\xe \v listarCliente\:meioTransporte.c}
+{\xe \v meioTransporte.c\:listarCliente}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void listarCliente ({\b cliente} *  {\i inicio})}}
+\par
+{\bkmkstart AAAAAAAACB}
+{\bkmkend AAAAAAAACB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 listar os dados do cliente \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- listarCliente \\params- inicio  \par
+}}
+{\xe \v listarGestor\:meioTransporte.c}
+{\xe \v meioTransporte.c\:listarGestor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void listarGestor ({\b gestor} *  {\i inicio})}}
+\par
+{\bkmkstart AAAAAAAACC}
+{\bkmkend AAAAAAAACC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 listar os dados do gestor \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- listarCliente \\params- inicio  \par
+}}
+{\xe \v listarMeios\:meioTransporte.c}
+{\xe \v meioTransporte.c\:listarMeios}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void listarMeios ({\b meioTransporte} *  {\i inicio})}}
+\par
+{\bkmkstart AAAAAAAACD}
+{\bkmkend AAAAAAAACD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 listar os dados do meio de transporte \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- listarMeios \\params- inicio  \par
+}}
+{\xe \v listarMeiosAutonomia\:meioTransporte.c}
+{\xe \v meioTransporte.c\:listarMeiosAutonomia}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void listarMeiosAutonomia ({\b meioTransporte} *  {\i listagem})}}
+\par
+{\bkmkstart AAAAAAAACE}
+{\bkmkend AAAAAAAACE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Fun\'E7\'E3o que lista os meios de transporte \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- listarMeiosAutonomia \\params- listagem  \par
+}}
+{\xe \v listarMeiosLocalizacao\:meioTransporte.c}
+{\xe \v meioTransporte.c\:listarMeiosLocalizacao}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void listarMeiosLocalizacao ({\b meioTransporte} *  {\i inicio}, char  {\i local}[])}}
+\par
+{\bkmkstart AAAAAAAACF}
+{\bkmkend AAAAAAAACF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 permitir a listagem dos meios de transporte que est\'E3o localizados numa determinada localiza\'E7\'E3o \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- listarMeiosLocalizacao \\params- inicio \\params- local \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+- A partir da localiza\'E7\'E3o do meio de transporte, se determinado(s) meio(s) de transporte estiver na mesma localiza\'E7\'E3o, o programa ir\'E1 listar os dados desses(s) meio(s) \par
+}}}}
+{\xe \v Ordenar\:meioTransporte.c}
+{\xe \v meioTransporte.c\:Ordenar}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b meioTransporte} * Ordenar ({\b meioTransporte} *  {\i inicio})}}
+\par
+{\bkmkstart AAAAAAAACG}
+{\bkmkend AAAAAAAACG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Fun\'E7\'E3o para ordenar os meios de transporte por ordem decrescente de autonomia \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- Ordenar \\params- inicio  \par
+}}
+{\xe \v registoAluguer\:meioTransporte.c}
+{\xe \v meioTransporte.c\:registoAluguer}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void registoAluguer ({\b meioTransporte} *  {\i inicio}, int  {\i cod})}}
+\par
+{\bkmkstart AAAAAAAACH}
+{\bkmkend AAAAAAAACH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Esta fun\'E7\'E3o ir\'E1 alterar o estado de aluguer do meio de transporte \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- registoAluguer \\params- inicio \\params- cod \\params- alug  \par
+}}
+{\xe \v removerCliente\:meioTransporte.c}
+{\xe \v meioTransporte.c\:removerCliente}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b cliente} * removerCliente ({\b cliente} *  {\i inicio}, int  {\i cod})}}
+\par
+{\bkmkstart AAAAAAAACI}
+{\bkmkend AAAAAAAACI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 remover os dados do cliente a partir do c\'F3digo do cliente \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- removerCliente \\params- inicio \\params- cod  \par
+}}
+{\xe \v removerGestor\:meioTransporte.c}
+{\xe \v meioTransporte.c\:removerGestor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b gestor} * removerGestor ({\b gestor} *  {\i inicio}, int  {\i cod})}}
+\par
+{\bkmkstart AAAAAAAACJ}
+{\bkmkend AAAAAAAACJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 remover os dados do gestor a partir do c\'F3digo do gestor \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- removerGestor \\params- inicio \\params- cod  \par
+}}
+{\xe \v removerMeio\:meioTransporte.c}
+{\xe \v meioTransporte.c\:removerMeio}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b meioTransporte} * removerMeio ({\b meioTransporte} *  {\i inicio}, int  {\i cod})}}
+\par
+{\bkmkstart AAAAAAAACK}
+{\bkmkend AAAAAAAACK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+A fun\'E7\'E3o ir\'E1 remover os dados do meio de transporte a partir do c\'F3digo do meio de transporte \par}
+}}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\\function name- removerMeio \\params- inicio \\params- cod  \par
+}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Index\par 
+\pard\plain 
+{\tc \v Index}
+{\field\fldedit {\*\fldinst INDEX \\c2 \\*MERGEFORMAT}{\fldrslt INDEX}}
+}

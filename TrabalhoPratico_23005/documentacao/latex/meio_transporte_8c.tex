@@ -1,0 +1,530 @@
+\hypertarget{meio_transporte_8c}{}\doxysection{C\+:/\+Users/wados/\+One\+Drive/\+Ambiente de Trabalho/stuff/eduardo/licenciatura/2 semestre/\+Estrutura\+\_\+dados/\+Estrutura\+\_\+dados/\+Trabalho\+Pratico\+\_\+23005/\+Trabalho\+Pratico\+\_\+23005/meio\+Transporte.c File Reference}
+\label{meio_transporte_8c}\index{C:/Users/wados/OneDrive/Ambiente de Trabalho/stuff/eduardo/licenciatura/2 semestre/Estrutura\_dados/Estrutura\_dados/TrabalhoPratico\_23005/TrabalhoPratico\_23005/meioTransporte.c@{C:/Users/wados/OneDrive/Ambiente de Trabalho/stuff/eduardo/licenciatura/2 semestre/Estrutura\_dados/Estrutura\_dados/TrabalhoPratico\_23005/TrabalhoPratico\_23005/meioTransporte.c}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Header.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{meio_transporte_8c_a541c9827e85220f3abef51cdbd78a89c}{guardar\+Meio}} (\mbox{\hyperlink{structregisto}{meio\+Transporte}} $\ast$inicio)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item guarda os valores inseridos na função inserir\+Meio, no ficheiro de texto \char`\"{}meios.\+txt\char`\"{}, a função irá guardar o código do meio, o tipo do meio, o estado da bateria, a autonomia do meio(em km), o estado de aluguer, e a sua localização. 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+int \mbox{\hyperlink{meio_transporte_8c_a7c7d34f93362d50aa69241ca284536c5}{guardar\+Cliente}} (\mbox{\hyperlink{structregisto2}{cliente}} $\ast$inicio)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item guarda os valores inseridos na função inserir\+CLiente, no ficheiro de texto \char`\"{}clientes.\+txt\char`\"{}, irá guardar o código do cliente, o nome do cliente, o número de telémovel, o nif e o mail do cliente 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+int \mbox{\hyperlink{meio_transporte_8c_a9b804d6b71313b3b3f5b1ff4431eb567}{guardar\+Gestor}} (\mbox{\hyperlink{structregisto3}{gestor}} $\ast$inicio)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item guarda os valores inseridos na função inserir\+Gestor, no ficheiro de texto \char`\"{}gestores.\+txt\char`\"{}, irá guardar o código do gestor, o nome do gestor e a sua password 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+\mbox{\hyperlink{structregisto}{meio\+Transporte}} $\ast$ \mbox{\hyperlink{meio_transporte_8c_a0a18b1a7274ce15adec41aefd3bc1db9}{ler\+Meio}} ()
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item A função irá ler o ficheiro de texto \char`\"{}meios.\+txt\char`\"{} 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+\mbox{\hyperlink{structregisto2}{cliente}} $\ast$ \mbox{\hyperlink{meio_transporte_8c_a732f05f0073e1a0abc9f112b0706459c}{ler\+Cliente}} ()
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item A função irá ler o ficheiro de texto \char`\"{}clientes.\+txt\char`\"{} 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+\mbox{\hyperlink{structregisto3}{gestor}} $\ast$ \mbox{\hyperlink{meio_transporte_8c_accbd7143eb9425074087046ce8dae33f}{ler\+Gestor}} ()
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item A função irá ler o ficheiro de texto \char`\"{}gestores.\+txt\char`\"{} 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+int \mbox{\hyperlink{meio_transporte_8c_a869f73a8f3efa4e812e32029768f3040}{existe\+Meio}} (\mbox{\hyperlink{structregisto}{meio\+Transporte}} $\ast$inicio, int cod)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item A função verifica se existe determinado meio de transporte através do código do meio, caso exista a função, através do cliclo \char`\"{}while\char`\"{} indica que esse meio de transporte já existe 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+int \mbox{\hyperlink{meio_transporte_8c_a589f9f275a22f780b0b3ea79989f1c05}{existe\+Cliente}} (\mbox{\hyperlink{structregisto2}{cliente}} $\ast$inicio, int cod)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item A função verifica se existe determinado clinte através do código do cliente, caso exista a função, através do cliclo \char`\"{}while\char`\"{} indica que esse cliente já existe 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+int \mbox{\hyperlink{meio_transporte_8c_aff36c0cb1d23c587dabbbc1ec1b76079}{existe\+Gestor}} (\mbox{\hyperlink{structregisto3}{gestor}} $\ast$inicio, int cod)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item A função verifica se existe determinado clinte através do código do cliente, caso exista a função, através do cliclo \char`\"{}while\char`\"{} indica que esse cliente já existe 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+\mbox{\hyperlink{structregisto}{meio\+Transporte}} $\ast$ \mbox{\hyperlink{meio_transporte_8c_a7ba9d1cf6c82e41e66907cf8a710be52}{inserir\+Meio}} (\mbox{\hyperlink{structregisto}{meio\+Transporte}} $\ast$inicio, int cod, char tipo\mbox{[}$\,$\mbox{]}, float bat, float aut, char alug\mbox{[}$\,$\mbox{]}, char local\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Insere os dados do código do meio de transporte, o tipo do meio, o estado da bateria, a autonomia, o estado de alugado e a localização do meio de transporte. A inserção é realizada no início da lista ligada A função devolve como resultado o novo endereço inicial da lista ligada 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+\mbox{\hyperlink{structregisto2}{cliente}} $\ast$ \mbox{\hyperlink{meio_transporte_8c_a1572d5972a38a40a36c439cbd8666ce9}{inserir\+Cliente}} (\mbox{\hyperlink{structregisto2}{cliente}} $\ast$inicio, int cod, char name\mbox{[}$\,$\mbox{]}, int num\+Tel, int NIF, char email\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Insere os dados do código cliente, o nome, o número de telémovel, o nif e o email do cliente A inserção é realizada no início da lista ligada A função devolve como resultado o novo endereço inicial da lista ligada 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+\mbox{\hyperlink{structregisto3}{gestor}} $\ast$ \mbox{\hyperlink{meio_transporte_8c_af22866fc55e7326bc8071bb8921bfeff}{inserir\+Gestor}} (\mbox{\hyperlink{structregisto3}{gestor}} $\ast$inicio, int cod, char name\mbox{[}$\,$\mbox{]}, char pass\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Insere os dados do código do gestor, o nome e a sua password A inserção é realizada no início da lista ligada A função devolve como resultado o novo endereço inicial da lista ligada 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{meio_transporte_8c_a206d9271aaefa8683fac486be996a09c}{listar\+Meios}} (\mbox{\hyperlink{structregisto}{meio\+Transporte}} $\ast$inicio)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item A função irá listar os dados do meio de transporte 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{meio_transporte_8c_a0ba3b00fabb87d3887cdd63748c85bc1}{listar\+Cliente}} (\mbox{\hyperlink{structregisto2}{cliente}} $\ast$inicio)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item A função irá listar os dados do cliente 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{meio_transporte_8c_ae3d9ec71d24931ee021c28f4a70b7e70}{listar\+Gestor}} (\mbox{\hyperlink{structregisto3}{gestor}} $\ast$inicio)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item A função irá listar os dados do gestor 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+\mbox{\hyperlink{structregisto}{meio\+Transporte}} $\ast$ \mbox{\hyperlink{meio_transporte_8c_a8cc9164a51b817459282247f432dc653}{remover\+Meio}} (\mbox{\hyperlink{structregisto}{meio\+Transporte}} $\ast$inicio, int cod)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item A função irá remover os dados do meio de transporte a partir do código do meio de transporte 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+\mbox{\hyperlink{structregisto2}{cliente}} $\ast$ \mbox{\hyperlink{meio_transporte_8c_afb8fc8dfa5cf20cdbbcf9422f92f309e}{remover\+Cliente}} (\mbox{\hyperlink{structregisto2}{cliente}} $\ast$inicio, int cod)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item A função irá remover os dados do cliente a partir do código do cliente 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+\mbox{\hyperlink{structregisto3}{gestor}} $\ast$ \mbox{\hyperlink{meio_transporte_8c_a6f149745a73d704e1164cc8c7bdbc381}{remover\+Gestor}} (\mbox{\hyperlink{structregisto3}{gestor}} $\ast$inicio, int cod)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item A função irá remover os dados do gestor a partir do código do gestor 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+\mbox{\hyperlink{structregisto}{meio\+Transporte}} $\ast$ \mbox{\hyperlink{meio_transporte_8c_a8d561abba2170c606513084228f9a737}{alterar\+Meio}} (\mbox{\hyperlink{structregisto}{meio\+Transporte}} $\ast$inicio, int cod, char tipo\mbox{[}$\,$\mbox{]}, float bat, float aut, char alug\mbox{[}$\,$\mbox{]}, char local\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item A função irá alterar os dados do meio de transporte que o utilizador pretende através do código do meio de transporte 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+\mbox{\hyperlink{structregisto2}{cliente}} $\ast$ \mbox{\hyperlink{meio_transporte_8c_aa9dc4e8cde0b896bd74b1ae77e134022}{alterar\+Cliente}} (\mbox{\hyperlink{structregisto2}{cliente}} $\ast$inicio, int cod, char name\mbox{[}$\,$\mbox{]}, int num\+Tel, int NIF, char email\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item A função irá alterar os dados do cliente que o utilizador pretender através do código de cliente 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+\mbox{\hyperlink{structregisto3}{gestor}} $\ast$ \mbox{\hyperlink{meio_transporte_8c_abfe7970be40162ae728c8bef4bf99f9d}{alterar\+Gestor}} (\mbox{\hyperlink{structregisto3}{gestor}} $\ast$inicio, int cod, char name\mbox{[}$\,$\mbox{]}, char pass)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item A função irá alterar os dados do cliente que o utilizador pretender através do código de cliente 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{meio_transporte_8c_a199de21dc320e7b96696d5a72e6deea6}{registo\+Aluguer}} (\mbox{\hyperlink{structregisto}{meio\+Transporte}} $\ast$inicio, int cod)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Esta função irá alterar o estado de aluguer do meio de transporte 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+\mbox{\hyperlink{structregisto}{meio\+Transporte}} $\ast$ \mbox{\hyperlink{meio_transporte_8c_aeea6ebe16f2c79da5cf14cfdd4f01574}{Ordenar}} (\mbox{\hyperlink{structregisto}{meio\+Transporte}} $\ast$inicio)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Função para ordenar os meios de transporte por ordem decrescente de autonomia 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{meio_transporte_8c_ac0b33eb471c035c6de6bbc5780853d03}{listar\+Meios\+Autonomia}} (\mbox{\hyperlink{structregisto}{meio\+Transporte}} $\ast$listagem)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item Função que lista os meios de transporte 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{meio_transporte_8c_a1655473ddf202e752ea3bc31e5fbb7ac}{listar\+Meios\+Localizacao}} (\mbox{\hyperlink{structregisto}{meio\+Transporte}} $\ast$inicio, char local\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
+\item A função irá permitir a listagem dos meios de transporte que estão localizados numa determinada localização 
+\end{DoxyItemize}\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Eduardo Queirós 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+March 2023 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{meio_transporte_8c_aa9dc4e8cde0b896bd74b1ae77e134022}\label{meio_transporte_8c_aa9dc4e8cde0b896bd74b1ae77e134022}} 
+\index{meioTransporte.c@{meioTransporte.c}!alterarCliente@{alterarCliente}}
+\index{alterarCliente@{alterarCliente}!meioTransporte.c@{meioTransporte.c}}
+\doxysubsubsection{\texorpdfstring{alterarCliente()}{alterarCliente()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structregisto2}{cliente}} $\ast$ alterar\+Cliente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structregisto2}{cliente}} $\ast$}]{inicio,  }\item[{int}]{cod,  }\item[{char}]{name\mbox{[}$\,$\mbox{]},  }\item[{int}]{num\+Tel,  }\item[{int}]{NIF,  }\item[{char}]{email\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item A função irá alterar os dados do cliente que o utilizador pretender através do código de cliente 
+\end{DoxyItemize}
+
+\textbackslash{}function name-\/ alterar\+Cliente \textbackslash{}params-\/ inicio \textbackslash{}params-\/ cod \textbackslash{}params-\/ name \textbackslash{}params-\/ num\+Tel \textbackslash{}params-\/ NIF \textbackslash{}params-\/ email 
+
+\begin{DoxyReturn}{Returns}
+-\/ Para os dados do cliente serem alterados, após o utilizador alterar os dados deverá usar a função guardar\+CLiente 
+\end{DoxyReturn}
+\mbox{\Hypertarget{meio_transporte_8c_abfe7970be40162ae728c8bef4bf99f9d}\label{meio_transporte_8c_abfe7970be40162ae728c8bef4bf99f9d}} 
+\index{meioTransporte.c@{meioTransporte.c}!alterarGestor@{alterarGestor}}
+\index{alterarGestor@{alterarGestor}!meioTransporte.c@{meioTransporte.c}}
+\doxysubsubsection{\texorpdfstring{alterarGestor()}{alterarGestor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structregisto3}{gestor}} $\ast$ alterar\+Gestor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structregisto3}{gestor}} $\ast$}]{inicio,  }\item[{int}]{cod,  }\item[{char}]{name\mbox{[}$\,$\mbox{]},  }\item[{char}]{pass }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item A função irá alterar os dados do cliente que o utilizador pretender através do código de cliente 
+\end{DoxyItemize}
+
+\textbackslash{}function name-\/ alterar\+Gestor \textbackslash{}params-\/ inicio \textbackslash{}params-\/ cod \textbackslash{}params-\/ name \textbackslash{}params-\/ pass 
+
+\begin{DoxyReturn}{Returns}
+-\/ Para os dados do gestor serem alterados, após o utilizador alterar os dados deverá usar a função guardar\+Gestor 
+\end{DoxyReturn}
+\mbox{\Hypertarget{meio_transporte_8c_a8d561abba2170c606513084228f9a737}\label{meio_transporte_8c_a8d561abba2170c606513084228f9a737}} 
+\index{meioTransporte.c@{meioTransporte.c}!alterarMeio@{alterarMeio}}
+\index{alterarMeio@{alterarMeio}!meioTransporte.c@{meioTransporte.c}}
+\doxysubsubsection{\texorpdfstring{alterarMeio()}{alterarMeio()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structregisto}{meio\+Transporte}} $\ast$ alterar\+Meio (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structregisto}{meio\+Transporte}} $\ast$}]{inicio,  }\item[{int}]{cod,  }\item[{char}]{tipo\mbox{[}$\,$\mbox{]},  }\item[{float}]{bat,  }\item[{float}]{aut,  }\item[{char}]{alug\mbox{[}$\,$\mbox{]},  }\item[{char}]{local\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item A função irá alterar os dados do meio de transporte que o utilizador pretende através do código do meio de transporte 
+\end{DoxyItemize}
+
+\textbackslash{}function name-\/ alterar\+Meio \textbackslash{}params-\/ inicio \textbackslash{}params-\/ cod \textbackslash{}params-\/ tipo \textbackslash{}params-\/ bat \textbackslash{}params-\/ aut \textbackslash{}params-\/ alug \textbackslash{}params-\/ local 
+
+\begin{DoxyReturn}{Returns}
+-\/ Para os dados do meio serem alterados, após o utilizador alterar os dados deverá usar a função guardar\+Meio 
+\end{DoxyReturn}
+\mbox{\Hypertarget{meio_transporte_8c_a589f9f275a22f780b0b3ea79989f1c05}\label{meio_transporte_8c_a589f9f275a22f780b0b3ea79989f1c05}} 
+\index{meioTransporte.c@{meioTransporte.c}!existeCliente@{existeCliente}}
+\index{existeCliente@{existeCliente}!meioTransporte.c@{meioTransporte.c}}
+\doxysubsubsection{\texorpdfstring{existeCliente()}{existeCliente()}}
+{\footnotesize\ttfamily int existe\+Cliente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structregisto2}{cliente}} $\ast$}]{inicio,  }\item[{int}]{cod }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item A função verifica se existe determinado clinte através do código do cliente, caso exista a função, através do cliclo \char`\"{}while\char`\"{} indica que esse cliente já existe 
+\end{DoxyItemize}
+
+\textbackslash{}function name-\/ existe\+Cliente \textbackslash{}params-\/ inicio \textbackslash{}params-\/ cod 
+
+
+\begin{DoxyItemize}
+\item \begin{DoxyReturn}{Returns}
+-\/ indica se existe, ou não, um cliente com o mesmo código na lista ligada 
+\end{DoxyReturn}
+
+\end{DoxyItemize}\mbox{\Hypertarget{meio_transporte_8c_aff36c0cb1d23c587dabbbc1ec1b76079}\label{meio_transporte_8c_aff36c0cb1d23c587dabbbc1ec1b76079}} 
+\index{meioTransporte.c@{meioTransporte.c}!existeGestor@{existeGestor}}
+\index{existeGestor@{existeGestor}!meioTransporte.c@{meioTransporte.c}}
+\doxysubsubsection{\texorpdfstring{existeGestor()}{existeGestor()}}
+{\footnotesize\ttfamily int existe\+Gestor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structregisto3}{gestor}} $\ast$}]{inicio,  }\item[{int}]{cod }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item A função verifica se existe determinado clinte através do código do cliente, caso exista a função, através do cliclo \char`\"{}while\char`\"{} indica que esse cliente já existe 
+\end{DoxyItemize}
+
+\textbackslash{}function name-\/ existe\+Gestor \textbackslash{}params-\/ inicio \textbackslash{}params-\/ cod 
+
+\begin{DoxyReturn}{Returns}
+-\/ indica se existe, ou não, um gestor com o mesmo código na lista ligada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{meio_transporte_8c_a869f73a8f3efa4e812e32029768f3040}\label{meio_transporte_8c_a869f73a8f3efa4e812e32029768f3040}} 
+\index{meioTransporte.c@{meioTransporte.c}!existeMeio@{existeMeio}}
+\index{existeMeio@{existeMeio}!meioTransporte.c@{meioTransporte.c}}
+\doxysubsubsection{\texorpdfstring{existeMeio()}{existeMeio()}}
+{\footnotesize\ttfamily int existe\+Meio (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structregisto}{meio\+Transporte}} $\ast$}]{inicio,  }\item[{int}]{cod }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item A função verifica se existe determinado meio de transporte através do código do meio, caso exista a função, através do cliclo \char`\"{}while\char`\"{} indica que esse meio de transporte já existe 
+\end{DoxyItemize}
+
+\textbackslash{}function name-\/ existe\+Meio \textbackslash{}params-\/ inicio \textbackslash{}params-\/ cod 
+
+\begin{DoxyReturn}{Returns}
+-\/ indica se existe, ou não, um meio com o mesmo código na lista ligada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{meio_transporte_8c_a7c7d34f93362d50aa69241ca284536c5}\label{meio_transporte_8c_a7c7d34f93362d50aa69241ca284536c5}} 
+\index{meioTransporte.c@{meioTransporte.c}!guardarCliente@{guardarCliente}}
+\index{guardarCliente@{guardarCliente}!meioTransporte.c@{meioTransporte.c}}
+\doxysubsubsection{\texorpdfstring{guardarCliente()}{guardarCliente()}}
+{\footnotesize\ttfamily int guardar\+Cliente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structregisto2}{cliente}} $\ast$}]{inicio }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item guarda os valores inseridos na função inserir\+CLiente, no ficheiro de texto \char`\"{}clientes.\+txt\char`\"{}, irá guardar o código do cliente, o nome do cliente, o número de telémovel, o nif e o mail do cliente 
+\end{DoxyItemize}
+
+\textbackslash{}function name-\/ guardar\+Cliente \textbackslash{}params-\/ inicio \mbox{\Hypertarget{meio_transporte_8c_a9b804d6b71313b3b3f5b1ff4431eb567}\label{meio_transporte_8c_a9b804d6b71313b3b3f5b1ff4431eb567}} 
+\index{meioTransporte.c@{meioTransporte.c}!guardarGestor@{guardarGestor}}
+\index{guardarGestor@{guardarGestor}!meioTransporte.c@{meioTransporte.c}}
+\doxysubsubsection{\texorpdfstring{guardarGestor()}{guardarGestor()}}
+{\footnotesize\ttfamily int guardar\+Gestor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structregisto3}{gestor}} $\ast$}]{inicio }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item guarda os valores inseridos na função inserir\+Gestor, no ficheiro de texto \char`\"{}gestores.\+txt\char`\"{}, irá guardar o código do gestor, o nome do gestor e a sua password 
+\end{DoxyItemize}
+
+\textbackslash{}function name-\/ guardar\+Gestor \textbackslash{}params-\/ inicio \mbox{\Hypertarget{meio_transporte_8c_a541c9827e85220f3abef51cdbd78a89c}\label{meio_transporte_8c_a541c9827e85220f3abef51cdbd78a89c}} 
+\index{meioTransporte.c@{meioTransporte.c}!guardarMeio@{guardarMeio}}
+\index{guardarMeio@{guardarMeio}!meioTransporte.c@{meioTransporte.c}}
+\doxysubsubsection{\texorpdfstring{guardarMeio()}{guardarMeio()}}
+{\footnotesize\ttfamily int guardar\+Meio (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structregisto}{meio\+Transporte}} $\ast$}]{inicio }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item guarda os valores inseridos na função inserir\+Meio, no ficheiro de texto \char`\"{}meios.\+txt\char`\"{}, a função irá guardar o código do meio, o tipo do meio, o estado da bateria, a autonomia do meio(em km), o estado de aluguer, e a sua localização. 
+\end{DoxyItemize}
+
+\textbackslash{}function name-\/ guardar\+Meio \textbackslash{}params-\/ inicio  \mbox{\Hypertarget{meio_transporte_8c_a1572d5972a38a40a36c439cbd8666ce9}\label{meio_transporte_8c_a1572d5972a38a40a36c439cbd8666ce9}} 
+\index{meioTransporte.c@{meioTransporte.c}!inserirCliente@{inserirCliente}}
+\index{inserirCliente@{inserirCliente}!meioTransporte.c@{meioTransporte.c}}
+\doxysubsubsection{\texorpdfstring{inserirCliente()}{inserirCliente()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structregisto2}{cliente}} $\ast$ inserir\+Cliente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structregisto2}{cliente}} $\ast$}]{inicio,  }\item[{int}]{cod,  }\item[{char}]{name\mbox{[}$\,$\mbox{]},  }\item[{int}]{num\+Tel,  }\item[{int}]{NIF,  }\item[{char}]{email\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Insere os dados do código cliente, o nome, o número de telémovel, o nif e o email do cliente A inserção é realizada no início da lista ligada A função devolve como resultado o novo endereço inicial da lista ligada 
+\end{DoxyItemize}
+
+\textbackslash{}function name-\/ inserir\+Cliente \textbackslash{}params-\/ inicio \textbackslash{}params-\/ cod \textbackslash{}params-\/ name \textbackslash{}params-\/ num\+Tel \textbackslash{}params-\/ NIF \textbackslash{}params-\/ email 
+
+\begin{DoxyReturn}{Returns}
+-\/ Utilizando a função existe\+Cliente, antes de inserirmos os valores, verificamos se existe um cliente com o mesmo código, de seguida se o apontador da lista ligada for diferente de nulo, insere os dados do cliente 
+\end{DoxyReturn}
+\mbox{\Hypertarget{meio_transporte_8c_af22866fc55e7326bc8071bb8921bfeff}\label{meio_transporte_8c_af22866fc55e7326bc8071bb8921bfeff}} 
+\index{meioTransporte.c@{meioTransporte.c}!inserirGestor@{inserirGestor}}
+\index{inserirGestor@{inserirGestor}!meioTransporte.c@{meioTransporte.c}}
+\doxysubsubsection{\texorpdfstring{inserirGestor()}{inserirGestor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structregisto3}{gestor}} $\ast$ inserir\+Gestor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structregisto3}{gestor}} $\ast$}]{inicio,  }\item[{int}]{cod,  }\item[{char}]{name\mbox{[}$\,$\mbox{]},  }\item[{char}]{pass\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Insere os dados do código do gestor, o nome e a sua password A inserção é realizada no início da lista ligada A função devolve como resultado o novo endereço inicial da lista ligada 
+\end{DoxyItemize}
+
+\textbackslash{}function name-\/ inserir\+Gestor \textbackslash{}params-\/ inicio \textbackslash{}params-\/ cod \textbackslash{}params-\/ name \textbackslash{}params-\/ pass 
+
+\begin{DoxyReturn}{Returns}
+-\/ Utilizando a função existe\+Gestor, antes de inserirmos os valores, verificamos se existe um gestor com o mesmo código, de seguida se o apontador da lista ligada for diferente de nulo, insere os dados do gestor 
+\end{DoxyReturn}
+\mbox{\Hypertarget{meio_transporte_8c_a7ba9d1cf6c82e41e66907cf8a710be52}\label{meio_transporte_8c_a7ba9d1cf6c82e41e66907cf8a710be52}} 
+\index{meioTransporte.c@{meioTransporte.c}!inserirMeio@{inserirMeio}}
+\index{inserirMeio@{inserirMeio}!meioTransporte.c@{meioTransporte.c}}
+\doxysubsubsection{\texorpdfstring{inserirMeio()}{inserirMeio()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structregisto}{meio\+Transporte}} $\ast$ inserir\+Meio (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structregisto}{meio\+Transporte}} $\ast$}]{inicio,  }\item[{int}]{cod,  }\item[{char}]{tipo\mbox{[}$\,$\mbox{]},  }\item[{float}]{bat,  }\item[{float}]{aut,  }\item[{char}]{alug\mbox{[}$\,$\mbox{]},  }\item[{char}]{local\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Insere os dados do código do meio de transporte, o tipo do meio, o estado da bateria, a autonomia, o estado de alugado e a localização do meio de transporte. A inserção é realizada no início da lista ligada A função devolve como resultado o novo endereço inicial da lista ligada 
+\end{DoxyItemize}
+
+\textbackslash{}function name-\/ inserir\+Meio \textbackslash{}params-\/ inicio \textbackslash{}params-\/ cod \textbackslash{}params-\/ tipo \textbackslash{}params-\/ bat \textbackslash{}params-\/ aut \textbackslash{}params-\/ alug \textbackslash{}params-\/ local 
+
+\begin{DoxyReturn}{Returns}
+-\/ Utilizando a função existe\+Meio, antes de inserirmos os valores, verificamos se existe um meio de transporte com o mesmo código, de seguida se o apontador da lista ligada for diferente de nulo, insere os dados do meio de transporte ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{meio_transporte_8c_a732f05f0073e1a0abc9f112b0706459c}\label{meio_transporte_8c_a732f05f0073e1a0abc9f112b0706459c}} 
+\index{meioTransporte.c@{meioTransporte.c}!lerCliente@{lerCliente}}
+\index{lerCliente@{lerCliente}!meioTransporte.c@{meioTransporte.c}}
+\doxysubsubsection{\texorpdfstring{lerCliente()}{lerCliente()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structregisto2}{cliente}} $\ast$ ler\+Cliente (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item A função irá ler o ficheiro de texto \char`\"{}clientes.\+txt\char`\"{} 
+\end{DoxyItemize}
+
+\textbackslash{}function name-\/ ler\+Cliente  \mbox{\Hypertarget{meio_transporte_8c_accbd7143eb9425074087046ce8dae33f}\label{meio_transporte_8c_accbd7143eb9425074087046ce8dae33f}} 
+\index{meioTransporte.c@{meioTransporte.c}!lerGestor@{lerGestor}}
+\index{lerGestor@{lerGestor}!meioTransporte.c@{meioTransporte.c}}
+\doxysubsubsection{\texorpdfstring{lerGestor()}{lerGestor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structregisto3}{gestor}} $\ast$ ler\+Gestor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item A função irá ler o ficheiro de texto \char`\"{}gestores.\+txt\char`\"{} 
+\end{DoxyItemize}
+
+\textbackslash{}function name-\/ ler\+Gestor 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{meio_transporte_8c_a0a18b1a7274ce15adec41aefd3bc1db9}\label{meio_transporte_8c_a0a18b1a7274ce15adec41aefd3bc1db9}} 
+\index{meioTransporte.c@{meioTransporte.c}!lerMeio@{lerMeio}}
+\index{lerMeio@{lerMeio}!meioTransporte.c@{meioTransporte.c}}
+\doxysubsubsection{\texorpdfstring{lerMeio()}{lerMeio()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structregisto}{meio\+Transporte}} $\ast$ ler\+Meio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item A função irá ler o ficheiro de texto \char`\"{}meios.\+txt\char`\"{} 
+\end{DoxyItemize}
+
+\textbackslash{}function name-\/ ler\+Meio  \mbox{\Hypertarget{meio_transporte_8c_a0ba3b00fabb87d3887cdd63748c85bc1}\label{meio_transporte_8c_a0ba3b00fabb87d3887cdd63748c85bc1}} 
+\index{meioTransporte.c@{meioTransporte.c}!listarCliente@{listarCliente}}
+\index{listarCliente@{listarCliente}!meioTransporte.c@{meioTransporte.c}}
+\doxysubsubsection{\texorpdfstring{listarCliente()}{listarCliente()}}
+{\footnotesize\ttfamily void listar\+Cliente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structregisto2}{cliente}} $\ast$}]{inicio }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item A função irá listar os dados do cliente 
+\end{DoxyItemize}
+
+\textbackslash{}function name-\/ listar\+Cliente \textbackslash{}params-\/ inicio  \mbox{\Hypertarget{meio_transporte_8c_ae3d9ec71d24931ee021c28f4a70b7e70}\label{meio_transporte_8c_ae3d9ec71d24931ee021c28f4a70b7e70}} 
+\index{meioTransporte.c@{meioTransporte.c}!listarGestor@{listarGestor}}
+\index{listarGestor@{listarGestor}!meioTransporte.c@{meioTransporte.c}}
+\doxysubsubsection{\texorpdfstring{listarGestor()}{listarGestor()}}
+{\footnotesize\ttfamily void listar\+Gestor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structregisto3}{gestor}} $\ast$}]{inicio }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item A função irá listar os dados do gestor 
+\end{DoxyItemize}
+
+\textbackslash{}function name-\/ listar\+Cliente \textbackslash{}params-\/ inicio  \mbox{\Hypertarget{meio_transporte_8c_a206d9271aaefa8683fac486be996a09c}\label{meio_transporte_8c_a206d9271aaefa8683fac486be996a09c}} 
+\index{meioTransporte.c@{meioTransporte.c}!listarMeios@{listarMeios}}
+\index{listarMeios@{listarMeios}!meioTransporte.c@{meioTransporte.c}}
+\doxysubsubsection{\texorpdfstring{listarMeios()}{listarMeios()}}
+{\footnotesize\ttfamily void listar\+Meios (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structregisto}{meio\+Transporte}} $\ast$}]{inicio }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item A função irá listar os dados do meio de transporte 
+\end{DoxyItemize}
+
+\textbackslash{}function name-\/ listar\+Meios \textbackslash{}params-\/ inicio  \mbox{\Hypertarget{meio_transporte_8c_ac0b33eb471c035c6de6bbc5780853d03}\label{meio_transporte_8c_ac0b33eb471c035c6de6bbc5780853d03}} 
+\index{meioTransporte.c@{meioTransporte.c}!listarMeiosAutonomia@{listarMeiosAutonomia}}
+\index{listarMeiosAutonomia@{listarMeiosAutonomia}!meioTransporte.c@{meioTransporte.c}}
+\doxysubsubsection{\texorpdfstring{listarMeiosAutonomia()}{listarMeiosAutonomia()}}
+{\footnotesize\ttfamily void listar\+Meios\+Autonomia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structregisto}{meio\+Transporte}} $\ast$}]{listagem }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Função que lista os meios de transporte 
+\end{DoxyItemize}
+
+\textbackslash{}function name-\/ listar\+Meios\+Autonomia \textbackslash{}params-\/ listagem  \mbox{\Hypertarget{meio_transporte_8c_a1655473ddf202e752ea3bc31e5fbb7ac}\label{meio_transporte_8c_a1655473ddf202e752ea3bc31e5fbb7ac}} 
+\index{meioTransporte.c@{meioTransporte.c}!listarMeiosLocalizacao@{listarMeiosLocalizacao}}
+\index{listarMeiosLocalizacao@{listarMeiosLocalizacao}!meioTransporte.c@{meioTransporte.c}}
+\doxysubsubsection{\texorpdfstring{listarMeiosLocalizacao()}{listarMeiosLocalizacao()}}
+{\footnotesize\ttfamily void listar\+Meios\+Localizacao (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structregisto}{meio\+Transporte}} $\ast$}]{inicio,  }\item[{char}]{local\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item A função irá permitir a listagem dos meios de transporte que estão localizados numa determinada localização 
+\end{DoxyItemize}
+
+\textbackslash{}function name-\/ listar\+Meios\+Localizacao \textbackslash{}params-\/ inicio \textbackslash{}params-\/ local 
+
+\begin{DoxyReturn}{Returns}
+-\/ A partir da localização do meio de transporte, se determinado(s) meio(s) de transporte estiver na mesma localização, o programa irá listar os dados desses(s) meio(s) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{meio_transporte_8c_aeea6ebe16f2c79da5cf14cfdd4f01574}\label{meio_transporte_8c_aeea6ebe16f2c79da5cf14cfdd4f01574}} 
+\index{meioTransporte.c@{meioTransporte.c}!Ordenar@{Ordenar}}
+\index{Ordenar@{Ordenar}!meioTransporte.c@{meioTransporte.c}}
+\doxysubsubsection{\texorpdfstring{Ordenar()}{Ordenar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structregisto}{meio\+Transporte}} $\ast$ Ordenar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structregisto}{meio\+Transporte}} $\ast$}]{inicio }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Função para ordenar os meios de transporte por ordem decrescente de autonomia 
+\end{DoxyItemize}
+
+\textbackslash{}function name-\/ Ordenar \textbackslash{}params-\/ inicio  \mbox{\Hypertarget{meio_transporte_8c_a199de21dc320e7b96696d5a72e6deea6}\label{meio_transporte_8c_a199de21dc320e7b96696d5a72e6deea6}} 
+\index{meioTransporte.c@{meioTransporte.c}!registoAluguer@{registoAluguer}}
+\index{registoAluguer@{registoAluguer}!meioTransporte.c@{meioTransporte.c}}
+\doxysubsubsection{\texorpdfstring{registoAluguer()}{registoAluguer()}}
+{\footnotesize\ttfamily void registo\+Aluguer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structregisto}{meio\+Transporte}} $\ast$}]{inicio,  }\item[{int}]{cod }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item Esta função irá alterar o estado de aluguer do meio de transporte 
+\end{DoxyItemize}
+
+\textbackslash{}function name-\/ registo\+Aluguer \textbackslash{}params-\/ inicio \textbackslash{}params-\/ cod \textbackslash{}params-\/ alug  \mbox{\Hypertarget{meio_transporte_8c_afb8fc8dfa5cf20cdbbcf9422f92f309e}\label{meio_transporte_8c_afb8fc8dfa5cf20cdbbcf9422f92f309e}} 
+\index{meioTransporte.c@{meioTransporte.c}!removerCliente@{removerCliente}}
+\index{removerCliente@{removerCliente}!meioTransporte.c@{meioTransporte.c}}
+\doxysubsubsection{\texorpdfstring{removerCliente()}{removerCliente()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structregisto2}{cliente}} $\ast$ remover\+Cliente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structregisto2}{cliente}} $\ast$}]{inicio,  }\item[{int}]{cod }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item A função irá remover os dados do cliente a partir do código do cliente 
+\end{DoxyItemize}
+
+\textbackslash{}function name-\/ remover\+Cliente \textbackslash{}params-\/ inicio \textbackslash{}params-\/ cod  \mbox{\Hypertarget{meio_transporte_8c_a6f149745a73d704e1164cc8c7bdbc381}\label{meio_transporte_8c_a6f149745a73d704e1164cc8c7bdbc381}} 
+\index{meioTransporte.c@{meioTransporte.c}!removerGestor@{removerGestor}}
+\index{removerGestor@{removerGestor}!meioTransporte.c@{meioTransporte.c}}
+\doxysubsubsection{\texorpdfstring{removerGestor()}{removerGestor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structregisto3}{gestor}} $\ast$ remover\+Gestor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structregisto3}{gestor}} $\ast$}]{inicio,  }\item[{int}]{cod }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item A função irá remover os dados do gestor a partir do código do gestor 
+\end{DoxyItemize}
+
+\textbackslash{}function name-\/ remover\+Gestor \textbackslash{}params-\/ inicio \textbackslash{}params-\/ cod  \mbox{\Hypertarget{meio_transporte_8c_a8cc9164a51b817459282247f432dc653}\label{meio_transporte_8c_a8cc9164a51b817459282247f432dc653}} 
+\index{meioTransporte.c@{meioTransporte.c}!removerMeio@{removerMeio}}
+\index{removerMeio@{removerMeio}!meioTransporte.c@{meioTransporte.c}}
+\doxysubsubsection{\texorpdfstring{removerMeio()}{removerMeio()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structregisto}{meio\+Transporte}} $\ast$ remover\+Meio (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structregisto}{meio\+Transporte}} $\ast$}]{inicio,  }\item[{int}]{cod }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyItemize}
+\item A função irá remover os dados do meio de transporte a partir do código do meio de transporte 
+\end{DoxyItemize}
+
+\textbackslash{}function name-\/ remover\+Meio \textbackslash{}params-\/ inicio \textbackslash{}params-\/ cod  

@@ -233,7 +233,9 @@ int Gestor() {
 			gestores = alterarGestor(gestores, codGestor, nomeGestor, pass);
 			break;
 
-		case 14:registoAluguer(meios, codTransporte);
+		case 14:printf("Codigo do meio de mobilidade?\n");
+			scanf("%d", &codTransporte);
+			registoAluguer(meios, codTransporte);
 			break;
 		case 15:Ordenar(meios);
 			listarMeiosAutonomia(meios);
