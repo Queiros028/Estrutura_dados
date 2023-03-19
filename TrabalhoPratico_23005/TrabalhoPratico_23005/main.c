@@ -233,9 +233,9 @@ int Gestor() {
 			gestores = alterarGestor(gestores, codGestor, nomeGestor, pass);
 			break;
 
-		case 14: //registo de aluguer
+		case 14:registoAluguer(meios, codTransporte);
 			break;
-		case 15:
+		case 15:Ordenar(meios);
 			listarMeiosAutonomia(meios);
 			break;
 		case 16:printf("Qual o localizacao do meio: \n");
@@ -309,7 +309,8 @@ int Cliente() {
 			break;
 		case 4: clientes = lerCliente();
 			listarCliente(clientes);
-		case 5:listarMeiosAutonomia(meios);
+		case 5:Ordenar(meios);
+			listarMeiosAutonomia(meios);
 			break;
 		case 6: printf("Qual o localizacao do meio: ");
 			scanf("%s", &local);

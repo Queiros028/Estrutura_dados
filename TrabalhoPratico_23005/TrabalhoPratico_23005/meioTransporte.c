@@ -651,75 +651,98 @@ gestor* alterarGestor(gestor* inicio, int cod, char name[], char pass)
  * 
  *  
  */
-void registoAluguer(meioTransporte* inicio,int cod ,char alug[])
+void registoAluguer(meioTransporte* inicio,int cod)
 {
-	meioTransporte* aux = inicio;
-
-	while (aux != NULL) 
+	while (inicio != NULL) 
 	{
-
-	}
-
-}
-
-//listagem de meios por ordem decrescente de autonomia
-//irá listar na consola o conteúdo da lista ligada
-
-/**
- *
- * \function name- listarMeiosAutonomia
- * \params- inicio
- * \brief- A função irá listar os meios de transporte por ordem decrescente de autonomia
- * 
- *  
- */
-
-/**
- *
- * \function name- TrocaMeios
- * \params- antesTroca
- * \params- depoisTroca
- * \brief- Esta função irá realizar a troca dos meios de transporte
- */
-void TrocaMeios(meioTransporte** antesTroca, meioTransporte** depoisTroca )
-{
-	meioTransporte* aux = *antesTroca;
-	*antesTroca = *depoisTroca;
-	*depoisTroca = aux;
-
-}
-/**
- *
- * \function name- listarMeiosAutonomia
- * \params- inicio
- * \brief- Lista os meios de transporte por ordem decrescente de autonomia
- * 
- *  
- */
-void listarMeiosAutonomia(meioTransporte* inicio)
-{
-	int aux = 1;
-	meioTransporte* atual = inicio;
-	meioTransporte* seguinte = inicio;
-
-	while (aux)
-	{
-		aux = 0;
-		atual = inicio;
-		while (atual->seguinte != seguinte)
+		if (inicio->codigo == cod) 
 		{
-			if (atual->autonomia < atual->seguinte->autonomia) 
+			if (stricmp(inicio->aluguer, "sim") != 0) 
 			{
-				TrocaMeios(&atual, &(atual->seguinte));
-				aux = 1;
+				strcpy(inicio->aluguer, "sim");
+				return 1;
 			}
-			atual = atual->seguinte;
+			else 
+			{
+				return 0;
+			}
 		}
-		seguinte = atual;
+		inicio = inicio->seguinte;
 	}
-	listarMeios(inicio);
+	return -1;
 }
 
+
+/**
+ *
+ * \function name- Ordenar
+ * \params- inicio
+ * \brief- Função para ordenar os meios de transporte por ordem decrescente de autonomia
+ *  
+ */
+meioTransporte* Ordenar(meioTransporte* inicio)
+{
+	meioTransporte* atual;
+	meioTransporte* seguinte;
+	meioTransporte* anterior = NULL;
+	int trocou = 1;
+
+	if (inicio == NULL) {
+		return 0;
+	}
+	while (trocou) 
+	{
+		trocou = 0;
+		atual = inicio;
+		seguinte = atual->seguinte;
+
+		while (seguinte != NULL) 
+		{
+			if (seguinte->autonomia > atual->autonomia) 
+			{
+				if (anterior != NULL)
+				{
+					anterior->seguinte = seguinte;
+				}
+				else {
+					inicio = seguinte;
+				}
+				atual->seguinte = seguinte->seguinte;
+				seguinte->seguinte = atual;
+				anterior = seguinte;
+				seguinte = atual->seguinte;
+				trocou = 1;
+			}
+			else {
+				anterior = seguinte;
+				atual = seguinte;
+				seguinte = seguinte->seguinte;
+			}
+
+		}
+
+	}
+	return(inicio);
+}
+
+/**
+ *
+ * \function name- listarMeiosAutonomia
+ * \params- listagem
+ * \brief- Função que lista os meios de transporte
+ * 
+ *  
+ */
+void listarMeiosAutonomia(meioTransporte* listagem) {
+
+	meioTransporte* atual =  listagem;
+
+	while (atual != NULL) 
+	{
+		printf("%s, com autonomia de %.2f\n", atual->tipo, atual->autonomia);
+		atual = atual->seguinte;
+	}
+}
 
 
 //listagem de meios existentes numa localização com determinado geocódigo

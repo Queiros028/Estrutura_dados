@@ -101,10 +101,12 @@ gestor* alterarGestor(gestor* inicio, int cod, char name[], char pass);
 
 
 //função para registo de aluguer de um determinado meio de mobilidade eletrica
-void registoAluguer(meioTransporte* inicio); // acho que faltam variaveis
+void registoAluguer(meioTransporte* inicio, int cod); 
 
+//ordenar meios de transporte por ordem decrescente de autonomia
+meioTransporte* Ordenar(meioTransporte* inicio);
 //listagem dos meios de mobilidade elétrica por ordem decrescente de autonomia
-void listarMeiosAutonomia(meioTransporte* inicio);
+void listarMeiosAutonomia(meioTransporte* listagem);
 
 //listagem de meios de mobilidade existentes numa localização com determinado geocódigo
-void listarMeiosLocalizacao(meioTransporte* inicio, char local[]); //acho que faltam variaveis aqui, para isso preciso de fazer o codigo
+void listarMeiosLocalizacao(meioTransporte* inicio, char local[]); 

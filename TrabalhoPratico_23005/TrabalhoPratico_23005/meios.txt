@@ -1,2 +1,2 @@
-2;carro;22.00;200.00;sim;braga
-1;sfsf;100.00;200.00;sim;braga
+10;asda;21.00;23.00;sim;braga
+1;carr;2.00;12.00;nao;braga
