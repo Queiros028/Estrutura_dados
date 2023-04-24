@@ -1,0 +1,2 @@
+2;bicicleta;50.00;100.00;sim;earplug.amazons.distortion
+1;trotinete;60.00;500.00;earplug.amazons.distortion;earplug.amazons.distortion

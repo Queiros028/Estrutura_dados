@@ -40,7 +40,7 @@ int guardarMeio(meioTransporte* inicio) //meioTransporte* inicio é uma lista lig
 	}
 	else return(0);
 	
-} //verificar se isto está correto!!!!!
+} 
 
 /**
  *
