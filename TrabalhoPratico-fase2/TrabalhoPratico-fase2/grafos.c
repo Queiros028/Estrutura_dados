@@ -1,75 +1,14 @@
+/*****************************************************************//**
+ * \file   grafos.c
+ * 
+ * \author Eduardo Queirós
+ * \date   May 2023
+ *********************************************************************/
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <math.h>
 #include "grafo.h"
-
-
-int guardarMeio(Grafo g)
-{
-	FILE* fp;
-	fp = fopen("meios.txt", "w");
-
-	if (fp != NULL)
-	{
-		meioTransporte aux = g->meios;
-		
-		while (aux != NULL)
-		{
-			fprintf(fp, "%d;%s;%.2f;%.2f;%s\n",aux->codigo, aux->tipo, aux->bateria, aux->autonomia,aux->localizacao);			
-			aux = aux->seguinte;
-		}
-		fclose(fp);
-		return(1);
-	}
-	else return(0);
-	
-}
-
-int guardarCliente(Grafo g)
-{
-	FILE* fp;
-	fp = fopen("meios.txt", "w");
-
-	if (fp != NULL)
-	{
-		Cliente aux = g->clientes;
-
-		while (aux != NULL)
-		{
-			fprintf(fp, "%d;%s;%d;%d;%s;%s\n", aux->codigo,aux->nome, aux->numTele, aux->nif, aux->mail, aux->localizacao);
-			aux = aux->seguinte;
-		}
-		fclose(fp);
-		return(1);
-	}
-	else return(0);
-
-}
-
-
-//esta parte n esta acabada, ver como fzr a parte da variavel auxiliar
-	/*
-int lerMeio(Grafo g)
-{
-	FILE* fp;
-	int cod;
-	float bat, aut;
-	char tipo[50], alug[50], local[50];
-	meioTransporte* aux = NULL;
-	fp = fopen("meios.txt", "r");
-	if (fp != NULL)
-	{
-		while (!feof(fp))
-		{
-			fscanf(fp, "%d;%s;%f;%f;%s;%s\n", &cod, tipo, &bat, &aut, alug, local);
-			aux = inserirMeio(aux, cod, tipo, bat, aut, alug, local);
-		}
-		fclose(fp);
-	}
-	return(aux);
-}
-*/
-
 
 
 // Criar um novo vértice
@@ -126,6 +65,51 @@ int criarAresta(Grafo g, char verticeOrigem[], char verticeDestino[], float peso
 }
 
 
+int guardarMeio(Grafo g)
+{
+	FILE* fp;
+	fp = fopen("meios.txt", "w");
+
+	if (fp != NULL)
+	{
+		meioTransporte aux = g->meios;
+		
+		while (aux != NULL)
+		{
+			fprintf(fp, "%d;%s;%.2f;%.2f;%s\n",aux->codigo, aux->tipo, aux->bateria, aux->autonomia,aux->localizacao);			
+			aux = aux->seguinte;
+		}
+		fclose(fp);
+		return(1);
+	}
+	else return(0);
+	
+}
+
+int guardarCliente(Grafo g)
+{
+	FILE* fp;
+	fp = fopen("meios.txt", "w");
+
+	if (fp != NULL)
+	{
+		Cliente aux = g->clientes;
+
+		while (aux != NULL)
+		{
+			fprintf(fp, "%d;%s;%d;%d;%s;%s\n", aux->codigo,aux->nome, aux->numTele, aux->nif, aux->mail, aux->localizacao);
+			aux = aux->seguinte;
+		}
+		fclose(fp);
+		return(1);
+	}
+	else return(0);
+
+}
+
+
+
+
 // Inserir meio de transporte na localização com geocódigo passado por parâmetro
 // Devolve 1 em caso de sucesso ou 0 caso contrário
 int inserirMeio(Grafo g, char geocodigo[], int cod, char tipoo[], float bat,float aut, char local[])
@@ -135,7 +119,11 @@ int inserirMeio(Grafo g, char geocodigo[], int cod, char tipoo[], float bat,floa
 		g = g->seguinte;
 	}
 		
-	if (g == NULL) return(0);
+	if (g == NULL)
+	{
+		return(0);
+	}
+		
 	else {
 		meioTransporte novo = malloc(sizeof(struct registo));
 		novo->codigo = cod;
@@ -175,6 +163,47 @@ int inserirClientes(Grafo g,char geocodigo[], int cod, char name[], int numTel, 
 }
 
 
+//esta parte n esta acabada, ver como fzr a parte da variavel auxiliar
+int lerMeio(Grafo g)
+{
+	FILE* fp;
+	int cod;
+	float bat, aut;
+	char tipo[30], local[TAM], geocodigo[TAM];
+	fp = fopen("meios.txt", "r");
+	if (fp != NULL)
+	{
+		while (!feof(fp))
+		{
+			fscanf(fp, "%d;%s;%f;%f;%s\n", &cod, tipo, &bat, &aut, local);
+			inserirMeio(g,geocodigo ,cod,tipo,bat,aut,local);
+		}
+		fclose(fp);
+		return(1);
+	}
+	return(0);
+}
+
+
+
+int lerCliente(Grafo g)
+{
+	FILE* fp;
+	int codCLiente, numTelef, niff;
+	char nome[TAM], email[TAM], localCliente[TAM], geocodigo[TAM];
+	fp = fopen("meios.txt", "r");
+	if (fp != NULL)
+	{
+		while (!feof(fp))
+		{
+			fscanf(fp, "%d;%s;%d;%d;%s;%s\n", &codCLiente, nome, &numTelef, &niff, email, localCliente );
+			inserirClientes(g,geocodigo ,codCLiente, nome, numTelef, niff, email, localCliente);
+		}
+		fclose(fp);
+		return(1);
+	}
+	return(0);
+}
 
 
 
@@ -217,3 +246,45 @@ void listarAdjacentes(Grafo g, char vertice[], int distancia)
 		}
 	}
 }
+
+
+/*
+Grafo caminhoRecolha(Grafo g, Camiao c){
+
+	//Grafo caminho = malloc(sizeof(struct registo1));
+	//if (caminho){
+		//strcpy(caminho->vertice, g->vertice);
+	//}
+
+	Grafo caminho = g;
+	Adjacente adj = caminho->adjacentes;
+
+	float menorPeso = adj->peso;
+	char menorVertice[TAM];
+	strcpy(adj->vertice, menorVertice);
+	if (adj->seguinte) adj = adj->seguinte;
+
+	// Descobrir qual o vértice adjacente com menor caminho
+	while (adj) {
+		if (adj->peso < menorPeso) menorPeso = adj->peso;
+		adj = adj->seguinte;
+	}
+
+	Grafo proximo = g;
+
+	// Encontrar na lista de vértices o vértice adjacente com menor caminho
+	while (g) {
+		if (strcmp(g->vertice, menorVertice)) 
+	}
+
+
+	
+	
+	
+
+
+
+	return caminho;
+}*/
+
+
