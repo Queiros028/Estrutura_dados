@@ -5,7 +5,7 @@
  * \date   May 2023
  *********************************************************************/
 #pragma once
-
+#pragma warning(disable: 4996) 
 //Representar um grafo orientado e pesado através da definição de uma lista ligada de listas ligadas
 
 #define TAM 50

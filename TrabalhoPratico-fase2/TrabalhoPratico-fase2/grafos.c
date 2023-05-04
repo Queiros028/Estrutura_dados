@@ -11,6 +11,7 @@
 #include "grafo.h"
 
 
+#pragma warning(disable: 4996) 
 // Criar um novo vértice
 // Devolve 1 em caso de sucesso ou 0 caso contrário
 int CriarVertice(Grafo *g, char novoId[])
