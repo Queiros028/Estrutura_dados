@@ -207,7 +207,7 @@ int lerCliente(Grafo g)
 }
 
 
-
+// falta acabar esta parte mas n estou com vontade nenhuma
 //AS DUAS FUNCOES DE LISTAR AINDA N ESTAO ACABADAS!!!!!!!!!!!!!!!!!!
 // Listar os códigos dos meios de transporte presente numa determinada localização passada por parâmetro
 void listarMeios(Grafo g, char local[])

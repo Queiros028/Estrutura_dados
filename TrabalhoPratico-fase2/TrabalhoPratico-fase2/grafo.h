@@ -59,19 +59,20 @@ typedef struct registo4
 
 
 //*******************************************************************************************************
-
-int guardarMeio(Grafo g);
-int guardarCliente(Grafo g);
-int inserirMeio(Grafo g, char geocodigo[], int cod, char tipoo[], float bat, float aut, char local[]);
-int inserirClientes(Grafo g, char geocodigo[], int cod, char name[], int numTel, int niff, char email[], char local[]);
-
 int CriarVertice(Grafo* g, char novoId[]);
 // Criar uma nova aresta
 // Devolve 1 em caso de sucesso ou 0 caso contrário
 int criarAresta(Grafo g, char verticeOrigem[], char verticeDestino[], float peso);
 int existeVertice(Grafo g, char vertice[]);
 
+int guardarMeio(Grafo g);
+int guardarCliente(Grafo g);
+int inserirMeio(Grafo g, char geocodigo[], int cod, char tipoo[], float bat, float aut, char local[]);
+int inserirClientes(Grafo g, char geocodigo[], int cod, char name[], int numTel, int niff, char email[], char local[]);
 
+int lerMeio(Grafo g);
+int lerCliente(Grafo g);
+void listarMeios(Grafo g, char local[]);
 
 
 
