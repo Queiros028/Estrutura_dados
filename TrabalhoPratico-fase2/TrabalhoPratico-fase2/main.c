@@ -2,7 +2,7 @@
  * \file   main.c
  * 
  * \author Eduardo Queirós
- * \date   March 2023
+ * \date   May 2023
  *********************************************************************/
 #include <stdlib.h>
 #include <stdio.h>
@@ -10,27 +10,14 @@
 
 #pragma warning(disable: 4996) 
 
-int menuInicial() {
-
-	int opcaoInicial;
-	printf("*****************Trabalho Pratico- Fase 2!!****************************\n");
-	printf("\n");
-	printf("1- Continuar para o programa\n");
-	printf("Opcao: \n");
-	printf("*******************************\n");
-	scanf("%d", &opcaoInicial);
-	printf("*******************************\n");
-	return(opcaoInicial);
-}
-
-
 int menuOpcoes()
 {
 	int opcao;
-	printf("*******************************************\n");
+	printf("*************************Trabalho pratico -> Fase 2************************\n");
+	printf("Escolha a operacao que deseja implementar: \n");
 	printf("1- Criar vertice\n");
-	printf("2- Verificar se existe o vertice\n");
-	printf("3- Criar Aresta\n");
+	printf("2- Criar Aresta\n");
+	printf("3- Listar vertices adjacentes\n");
 	printf("4- Inserir meios\n");
 	printf("5- Inserir clientes\n");
 	printf("6- Armazenar meios\n");
@@ -41,7 +28,7 @@ int menuOpcoes()
 	printf("11- Caixeiro viajante\n");
 	printf("0 - SAIR\n");
 	printf("*******************************************\n");
-	printf("Opcao?\n ");
+	printf("Opcao: \n ");
 	scanf("%d", &opcao);
 	printf("*******************************************\n");
 	return(opcao);
@@ -51,6 +38,10 @@ int menuOpcoes()
 int menu() 
 {
 	int opcao;
+	//variaveis para os vertices/arestas
+	char localVertice[TAM];
+	int resultado;//ns se isto deve estar em int ou char!!!!!!!
+
 	//variaveis meioTransporte
 	int codmeio;
 	char tipoo[TAM], localMeio[TAM], geocodigoMeio[TAM];
@@ -60,23 +51,29 @@ int menu()
 	int codcliente, numTel, niff;
 	char nomeCliente[TAM],email[TAM], localCliente[TAM], geocodigoCliente[TAM];
 
-
-	meioTransporte* meios = NULL;
-	Cliente* clientes = NULL;
+	Grafo g = NULL;
 
 	do 
 	{
 		opcao = menuOpcoes();
 		switch (opcao)
-		{
-			/*
-		case 1: CriarVertice();
-				break:
-		case 2: existeVertice();
+		{	
+		case 1: printf("Qual o geocodigo do vertice que pretende criar?\n");
+			scanf("%s", &localVertice);
+			resultado = CriarVertice(&g, localVertice);
+			printf("***************\n");
+			if (resultado == 1) {
+				printf("Vertice criado!\n");
+			}
+			else if (resultado == 0) 
+			{
+				printf("Vertice nao foi criado\n");
+			}
 			break;
-		case 3: criarAresta();
+		case 2: 
+			break;	
+		case 3: 
 			break;
-			*/
 		case 4:printf("Insira o geocodigo:\n");
 			scanf("%[^\n]s", geocodigoMeio); //ns se isto esta a dar direito, dps preciso de confirmar
 			printf("Insira o codigo do meio:\n");
@@ -90,7 +87,7 @@ int menu()
 			scanf("%f", &aut);
 			printf("Insira a localizacao:\n");
 			scanf("%s", &localMeio);				
-			inserirMeio(meios, geocodigoMeio,codmeio, tipoo, bat, aut, localMeio);
+			inserirMeio(g, geocodigoMeio,codmeio, tipoo, bat, aut, localMeio);
 			break;
 		case 5: printf("Insira o geocodigo:\n");
 			scanf("%[^\n]s", geocodigoCliente);
@@ -107,25 +104,39 @@ int menu()
 			scanf("%s", &email);
 			printf("Insira a localizacao:\n");
 			scanf("%s", &localCliente);		
-			inserirClientes(clientes,geocodigoCliente ,codcliente,nomeCliente ,numTel, niff, email, localCliente);
+			inserirClientes(g,geocodigoCliente ,codcliente,nomeCliente ,numTel, niff, email, localCliente);
 			break;
 
-
-		default:
+		case 6: guardarCliente(g); 
 			break;
+		case 7: guardarMeio(g); 
+			break;
+		//case 8: meios = lerMeio(g);
+			//break;
+		//case 9: clientes = lerCliente(g);
+			//break;		
 		}
 	} while (opcao != 0);
+
+	return(0);
 }
 
 int main() {
-	Grafo G = NULL;
+	Grafo g = NULL;
 
-	int opcaoPrincipal = menuInicial();
-	switch (opcaoPrincipal) 
-	{
-		case 1: menuOpcoes();
-			break;
-		default: printf("Não existe essa opcao!!!\n");
-	}
+	/*
+	*	aqui vou fzr assim para ja ter 3 vertices ligados antes de correr menu
+	* depois no menu posso adicionar mais vertices e pra ligar os mesmos tenho de criar arestas entre eles
+	*/
+	CriarVertice(&g, "earplug.amazons.distortion"); //1º vértice pré existente(localizao ipca)
+	CriarVertice(&g, "fruit.cutback.breeding"); //2º vértice pré existente(localizacao zona ribeirinha)
+	CriarVertice(&g, "embark.birdseed.ticked"); //3º vértice pré existente(localizacao estadio gil vicente)
+
+	criarAresta(g, "earplug.amazons.distortion", "fruit.cutback.breeding", 4);// aresta entre ipca e zona ribeirinha
+	criarAresta(g, "earplug.amazons.distortion", "embark.birdseed.ticked", 1); //aresta entre ipca e estadio gil
+	criarAresta(g, "fruit.cutback.breeding", "embark.birdseed.ticked", 1); //aresta entre zonha ribeirinha e estadio gil
+	
+
+	int opcaoPrincipal = menu(); 
 
 }

@@ -21,7 +21,9 @@ int CriarVertice(Grafo *g, char novoId[])
 	{
 		strcpy(novo->vertice, novoId);
 		novo->meios = NULL;
+		novo->clientes = NULL;
 		novo->seguinte = *g;
+		novo->adjacentes = NULL;
 		*g = novo;
 		return(1);
 	}

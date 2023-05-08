@@ -1,7 +1,2 @@
 ﻿  main.c
-C:\Users\wados\OneDrive\Ambiente de Trabalho\stuff\eduardo\licenciatura\2 semestre\Estrutura_dados\Estrutura_dados\TrabalhoPratico-fase2\TrabalhoPratico-fase2\main.c(93,21): warning C4047: 'function': 'Grafo' differs in levels of indirection from 'meioTransporte *'
-C:\Users\wados\OneDrive\Ambiente de Trabalho\stuff\eduardo\licenciatura\2 semestre\Estrutura_dados\Estrutura_dados\TrabalhoPratico-fase2\TrabalhoPratico-fase2\main.c(93,16): warning C4024: 'inserirMeio': different types for formal and actual parameter 1
-C:\Users\wados\OneDrive\Ambiente de Trabalho\stuff\eduardo\licenciatura\2 semestre\Estrutura_dados\Estrutura_dados\TrabalhoPratico-fase2\TrabalhoPratico-fase2\main.c(110,28): warning C4047: 'function': 'Grafo' differs in levels of indirection from 'Cliente *'
-C:\Users\wados\OneDrive\Ambiente de Trabalho\stuff\eduardo\licenciatura\2 semestre\Estrutura_dados\Estrutura_dados\TrabalhoPratico-fase2\TrabalhoPratico-fase2\main.c(110,20): warning C4024: 'inserirClientes': different types for formal and actual parameter 1
-C:\Users\wados\OneDrive\Ambiente de Trabalho\stuff\eduardo\licenciatura\2 semestre\Estrutura_dados\Estrutura_dados\TrabalhoPratico-fase2\TrabalhoPratico-fase2\main.c(118): warning C4716: 'menu': must return a value
   TrabalhoPratico-fase2.vcxproj -> C:\Users\wados\OneDrive\Ambiente de Trabalho\stuff\eduardo\licenciatura\2 semestre\Estrutura_dados\Estrutura_dados\TrabalhoPratico-fase2\x64\Debug\TrabalhoPratico-fase2.exe
